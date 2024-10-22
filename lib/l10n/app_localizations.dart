@@ -93,11 +93,11 @@ abstract class AppLocalizations {
     Locale('ru')
   ];
 
-  /// No description provided for @app_name.
+  /// No description provided for @appName.
   ///
   /// In ru, this message translates to:
   /// **'Рик и Морти'**
-  String get app_name;
+  String get appName;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:rick_and_morty/l10n/generated/app_localizations.dart';
+import 'package:rick_and_morty/l10n/app_localizations.dart';
 import 'package:rick_and_morty/presentation/core/app_theme_light.dart';
 import 'package:rick_and_morty/presentation/routing/router.dart';
 
