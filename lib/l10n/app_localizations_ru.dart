@@ -8,4 +8,16 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get appName => 'Рик и Морти';
+
+  @override
+  String get characters => 'Персонажи';
+
+  @override
+  String get locations => 'Локации';
+
+  @override
+  String get episodes => 'Эпизоды';
+
+  @override
+  String get settings => 'Настройки';
 }

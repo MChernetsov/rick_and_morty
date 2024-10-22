@@ -6,6 +6,23 @@ class AppRouter extends RootStackRouter {
   @override
   List<AutoRoute> get routes => [
         AutoRoute(page: SplashRoute.page, initial: true),
-        AutoRoute(page: MainRoute.page),
+        AutoRoute(
+          page: MainRoute.page,
+          children: [
+            AutoRoute(
+              page: CharactersRoute.page,
+              initial: true,
+            ),
+            AutoRoute(
+              page: LocationsRoute.page,
+            ),
+            AutoRoute(
+              page: EpisodesRoute.page,
+            ),
+            AutoRoute(
+              page: SettingsRoute.page,
+            ),
+          ],
+        ),
       ];
 }

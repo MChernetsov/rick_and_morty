@@ -1,3 +1,7 @@
 {
-  "appName": "Рик и Морти"
+  "appName": "Рик и Морти",
+  "characters": "Персонажи",
+  "locations": "Локации",
+  "episodes": "Эпизоды",
+  "settings": "Настройки"
 }

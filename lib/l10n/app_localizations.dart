@@ -98,6 +98,30 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Рик и Морти'**
   String get appName;
+
+  /// No description provided for @characters.
+  ///
+  /// In ru, this message translates to:
+  /// **'Персонажи'**
+  String get characters;
+
+  /// No description provided for @locations.
+  ///
+  /// In ru, this message translates to:
+  /// **'Локации'**
+  String get locations;
+
+  /// No description provided for @episodes.
+  ///
+  /// In ru, this message translates to:
+  /// **'Эпизоды'**
+  String get episodes;
+
+  /// No description provided for @settings.
+  ///
+  /// In ru, this message translates to:
+  /// **'Настройки'**
+  String get settings;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

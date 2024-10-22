@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:rick_and_morty/l10n/app_localizations.dart';
-import 'package:rick_and_morty/presentation/core/app_theme_light.dart';
+import 'package:rick_and_morty/presentation/core/app_theme_dark.dart';
 import 'package:rick_and_morty/presentation/routing/router.dart';
 
 class RickAndMortyApp extends StatelessWidget {
@@ -22,7 +22,8 @@ class RickAndMortyApp extends StatelessWidget {
         Locale('ru'),
       ],
       title: 'Rick and Morty',
-      theme: appThemeLight,
+      debugShowCheckedModeBanner: false,
+      theme: appThemeDark,
       routerConfig: _appRouter.config(),
     );
   }
