@@ -12,6 +12,7 @@ final appThemeDark = ThemeData(
     secondaryContainer: Colors.amber,
     onSecondaryContainer: Color(0xFF6E798C),
     onTertiaryContainer: Color(0xFF5B6975),
+    tertiaryContainer: Color(0xFF22A2BD),
   ),
   textTheme: TextTheme(
     headlineMedium: TextStyle(
@@ -28,6 +29,11 @@ final appThemeDark = ThemeData(
       fontWeight: FontWeight.w500,
       fontSize: 16,
       height: 24 / 16,
+    ),
+    bodySmall: TextStyle(
+      fontWeight: FontWeight.w500,
+      fontSize: 14,
+      height: 20 / 14,
     ),
     titleLarge: TextStyle(
       fontWeight: FontWeight.w400,

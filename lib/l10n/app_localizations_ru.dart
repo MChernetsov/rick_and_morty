@@ -62,4 +62,10 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get searchCharacter => 'Найти персонажа ';
+
+  @override
+  String get episode => 'Серия ';
+
+  @override
+  String get season => 'СЕЗОН ';
 }

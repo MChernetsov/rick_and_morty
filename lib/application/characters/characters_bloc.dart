@@ -109,7 +109,7 @@ class CharactersBloc extends Bloc<CharactersEvent, CharactersState> {
 
   FutureOr<void> _searchStringChanged(
       _SearchStringChanged event, Emitter<CharactersState> emit) async {
-    state.maybeMap(
+    await state.maybeMap(
       orElse: () {},
       loaded: (state) async {
         await Future.delayed(

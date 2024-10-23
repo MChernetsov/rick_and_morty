@@ -17,5 +17,7 @@
   "genderless": "Бесполый",
   "totalCharacters": "Всего персонажей: ",
   "foundCharacters": "Найдено персонажей: ",
-  "searchCharacter": "Найти персонажа "
+  "searchCharacter": "Найти персонажа ",
+  "episode": "Серия ",
+  "season": "СЕЗОН "
 }
