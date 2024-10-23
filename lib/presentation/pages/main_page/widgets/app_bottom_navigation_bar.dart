@@ -26,8 +26,9 @@ class _AppBottomNavigationBarState extends State<AppBottomNavigationBar> {
     final theme = Theme.of(context);
     final localizations = AppLocalizations.of(context);
 
+    // Todo fix incorrect routing display.
     return Container(
-      color: theme.cardColor,
+      color: theme.dividerColor,
       child: SafeArea(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,

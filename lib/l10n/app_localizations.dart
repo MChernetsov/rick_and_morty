@@ -218,6 +218,36 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'СЕЗОН '**
   String get season;
+
+  /// No description provided for @gender.
+  ///
+  /// In ru, this message translates to:
+  /// **'Пол'**
+  String get gender;
+
+  /// No description provided for @race.
+  ///
+  /// In ru, this message translates to:
+  /// **'Раса'**
+  String get race;
+
+  /// No description provided for @origin.
+  ///
+  /// In ru, this message translates to:
+  /// **'Место рождения'**
+  String get origin;
+
+  /// No description provided for @location.
+  ///
+  /// In ru, this message translates to:
+  /// **'Местоположение'**
+  String get location;
+
+  /// No description provided for @allEpisodes.
+  ///
+  /// In ru, this message translates to:
+  /// **'Все эпизоды'**
+  String get allEpisodes;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

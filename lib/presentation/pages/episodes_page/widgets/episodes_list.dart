@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rick_and_morty/domain/episode/models/episode.dart';
-import 'package:rick_and_morty/presentation/pages/episodes_page/widgets/episodes_list_item.dart';
+import 'package:rick_and_morty/presentation/core/widgets/episodes_list_item.dart';
 
 class EpisodesList extends StatefulWidget {
   const EpisodesList({

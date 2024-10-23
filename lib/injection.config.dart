@@ -13,6 +13,8 @@ import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:rick_and_morty/application/characters/characters_bloc.dart'
     as _i520;
+import 'package:rick_and_morty/application/characters/detail_character/detail_character_bloc.dart'
+    as _i853;
 import 'package:rick_and_morty/application/episodes/episodes_bloc.dart' as _i13;
 import 'package:rick_and_morty/application/locations/locations_bloc.dart'
     as _i689;
@@ -61,6 +63,8 @@ extension GetItInjectableX on _i174.GetIt {
         () => _i606.EpisodeRepository(gh<_i348.EpisodeApi>()));
     gh.factory<_i689.LocationsBloc>(
         () => _i689.LocationsBloc(gh<_i547.ILocationRepository>()));
+    gh.factory<_i853.DetailCharacterBloc>(
+        () => _i853.DetailCharacterBloc(gh<_i756.IEpisodeRepository>()));
     gh.factory<_i13.EpisodesBloc>(
         () => _i13.EpisodesBloc(gh<_i756.IEpisodeRepository>()));
     gh.lazySingleton<_i556.ICharacterRepository>(

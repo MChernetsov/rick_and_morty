@@ -68,4 +68,19 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get season => 'СЕЗОН ';
+
+  @override
+  String get gender => 'Пол';
+
+  @override
+  String get race => 'Раса';
+
+  @override
+  String get origin => 'Место рождения';
+
+  @override
+  String get location => 'Местоположение';
+
+  @override
+  String get allEpisodes => 'Все эпизоды';
 }
