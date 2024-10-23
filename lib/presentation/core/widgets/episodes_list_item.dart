@@ -1,6 +1,8 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:rick_and_morty/domain/episode/models/episode.dart';
 import 'package:rick_and_morty/l10n/app_localizations.dart';
+import 'package:rick_and_morty/presentation/routing/router.gr.dart';
 
 class EpisodesListItem extends StatelessWidget {
   const EpisodesListItem({super.key, required this.episode});
@@ -13,7 +15,7 @@ class EpisodesListItem extends StatelessWidget {
     final localizations = AppLocalizations.of(context);
     return GestureDetector(
       onTap: () {
-        // Todo: Navigate to detail episode page
+        context.router.push(EpisodeRoute(episode: episode));
       },
       child: Material(
         color: Colors.transparent,

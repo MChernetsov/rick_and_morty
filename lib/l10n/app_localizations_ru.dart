@@ -83,4 +83,7 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get allEpisodes => 'Все эпизоды';
+
+  @override
+  String get premier => 'Премьера';
 }

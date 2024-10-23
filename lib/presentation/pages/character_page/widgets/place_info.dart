@@ -13,14 +13,16 @@ class PlaceInfo extends StatelessWidget {
 
   final String name;
   final String title;
-  final Location location;
+  final Location? location;
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return GestureDetector(
       onTap: () {
-        context.router.push(LocationRoute(location: location));
+        if (location != null) {
+          context.router.push(LocationRoute(location: location!));
+        }
       },
       child: Container(
         color: Colors.transparent,

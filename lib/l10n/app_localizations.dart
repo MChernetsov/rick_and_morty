@@ -248,6 +248,12 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Все эпизоды'**
   String get allEpisodes;
+
+  /// No description provided for @premier.
+  ///
+  /// In ru, this message translates to:
+  /// **'Премьера'**
+  String get premier;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
