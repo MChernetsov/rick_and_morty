@@ -1,23 +1,26 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:rick_and_morty/domain/locations/models/location.dart';
+import 'package:rick_and_morty/presentation/routing/router.gr.dart';
 
 class PlaceInfo extends StatelessWidget {
   const PlaceInfo({
     super.key,
     required this.name,
     required this.title,
-    required this.url,
+    required this.location,
   });
 
   final String name;
   final String title;
-  final String url;
+  final Location location;
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return GestureDetector(
       onTap: () {
-        // Todo: Navigate to location page.
+        context.router.push(LocationRoute(location: location));
       },
       child: Container(
         color: Colors.transparent,
