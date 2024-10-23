@@ -39,13 +39,8 @@ class LocationPage extends StatelessWidget {
               padding: const EdgeInsets.only(
                 top: 207,
               ),
-              child: SafeArea(
-                top: false,
-                left: false,
-                right: false,
-                child: LocationInfo(
-                  location: location,
-                ),
+              child: LocationInfo(
+                location: location,
               ),
             ),
             SafeArea(

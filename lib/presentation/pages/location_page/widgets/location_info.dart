@@ -22,6 +22,7 @@ class LocationInfo extends StatelessWidget {
         vertical: 24,
       ),
       decoration: BoxDecoration(
+        color: theme.scaffoldBackgroundColor,
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(26),
           topRight: Radius.circular(26),
