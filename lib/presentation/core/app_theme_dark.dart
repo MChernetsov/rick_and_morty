@@ -6,13 +6,19 @@ final appThemeDark = ThemeData(
   scaffoldBackgroundColor: Color(0xFF0B1E2D),
   cardColor: Color(0xFF152A3A),
   colorScheme: ColorScheme.dark(
-      onSurface: Color(0xFFFFFFFF),
-      error: Color(0xFFEB5757),
-      // undefined in color pallete
-      secondaryContainer: Colors.amber,
-      onSecondaryContainer: Color(0xFF6E798C),
-      onTertiaryContainer: Color(0xFF5B6975)),
+    onSurface: Color(0xFFFFFFFF),
+    error: Color(0xFFEB5757),
+    // undefined in color pallete
+    secondaryContainer: Colors.amber,
+    onSecondaryContainer: Color(0xFF6E798C),
+    onTertiaryContainer: Color(0xFF5B6975),
+  ),
   textTheme: TextTheme(
+    headlineMedium: TextStyle(
+      fontWeight: FontWeight.w500,
+      fontSize: 20,
+      height: 28 / 20,
+    ),
     labelLarge: TextStyle(
       fontWeight: FontWeight.w400,
       fontSize: 12,

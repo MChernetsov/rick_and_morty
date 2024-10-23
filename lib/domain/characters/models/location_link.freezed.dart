@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'location.dart';
+part of 'location_link.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,36 +15,37 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
-mixin _$Location {
+mixin _$LocationLink {
   String get name => throw _privateConstructorUsedError;
   String get url => throw _privateConstructorUsedError;
 
-  /// Create a copy of Location
+  /// Create a copy of LocationLink
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $LocationCopyWith<Location> get copyWith =>
+  $LocationLinkCopyWith<LocationLink> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $LocationCopyWith<$Res> {
-  factory $LocationCopyWith(Location value, $Res Function(Location) then) =
-      _$LocationCopyWithImpl<$Res, Location>;
+abstract class $LocationLinkCopyWith<$Res> {
+  factory $LocationLinkCopyWith(
+          LocationLink value, $Res Function(LocationLink) then) =
+      _$LocationLinkCopyWithImpl<$Res, LocationLink>;
   @useResult
   $Res call({String name, String url});
 }
 
 /// @nodoc
-class _$LocationCopyWithImpl<$Res, $Val extends Location>
-    implements $LocationCopyWith<$Res> {
-  _$LocationCopyWithImpl(this._value, this._then);
+class _$LocationLinkCopyWithImpl<$Res, $Val extends LocationLink>
+    implements $LocationLinkCopyWith<$Res> {
+  _$LocationLinkCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of Location
+  /// Create a copy of LocationLink
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -66,25 +67,25 @@ class _$LocationCopyWithImpl<$Res, $Val extends Location>
 }
 
 /// @nodoc
-abstract class _$$LocationImplCopyWith<$Res>
-    implements $LocationCopyWith<$Res> {
-  factory _$$LocationImplCopyWith(
-          _$LocationImpl value, $Res Function(_$LocationImpl) then) =
-      __$$LocationImplCopyWithImpl<$Res>;
+abstract class _$$LocationLinkImplCopyWith<$Res>
+    implements $LocationLinkCopyWith<$Res> {
+  factory _$$LocationLinkImplCopyWith(
+          _$LocationLinkImpl value, $Res Function(_$LocationLinkImpl) then) =
+      __$$LocationLinkImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String name, String url});
 }
 
 /// @nodoc
-class __$$LocationImplCopyWithImpl<$Res>
-    extends _$LocationCopyWithImpl<$Res, _$LocationImpl>
-    implements _$$LocationImplCopyWith<$Res> {
-  __$$LocationImplCopyWithImpl(
-      _$LocationImpl _value, $Res Function(_$LocationImpl) _then)
+class __$$LocationLinkImplCopyWithImpl<$Res>
+    extends _$LocationLinkCopyWithImpl<$Res, _$LocationLinkImpl>
+    implements _$$LocationLinkImplCopyWith<$Res> {
+  __$$LocationLinkImplCopyWithImpl(
+      _$LocationLinkImpl _value, $Res Function(_$LocationLinkImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of Location
+  /// Create a copy of LocationLink
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -92,7 +93,7 @@ class __$$LocationImplCopyWithImpl<$Res>
     Object? name = null,
     Object? url = null,
   }) {
-    return _then(_$LocationImpl(
+    return _then(_$LocationLinkImpl(
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -107,8 +108,8 @@ class __$$LocationImplCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$LocationImpl implements _Location {
-  const _$LocationImpl({required this.name, required this.url});
+class _$LocationLinkImpl implements _LocationLink {
+  const _$LocationLinkImpl({required this.name, required this.url});
 
   @override
   final String name;
@@ -117,14 +118,14 @@ class _$LocationImpl implements _Location {
 
   @override
   String toString() {
-    return 'Location(name: $name, url: $url)';
+    return 'LocationLink(name: $name, url: $url)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$LocationImpl &&
+            other is _$LocationLinkImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.url, url) || other.url == url));
   }
@@ -132,28 +133,29 @@ class _$LocationImpl implements _Location {
   @override
   int get hashCode => Object.hash(runtimeType, name, url);
 
-  /// Create a copy of Location
+  /// Create a copy of LocationLink
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$LocationImplCopyWith<_$LocationImpl> get copyWith =>
-      __$$LocationImplCopyWithImpl<_$LocationImpl>(this, _$identity);
+  _$$LocationLinkImplCopyWith<_$LocationLinkImpl> get copyWith =>
+      __$$LocationLinkImplCopyWithImpl<_$LocationLinkImpl>(this, _$identity);
 }
 
-abstract class _Location implements Location {
-  const factory _Location(
-      {required final String name, required final String url}) = _$LocationImpl;
+abstract class _LocationLink implements LocationLink {
+  const factory _LocationLink(
+      {required final String name,
+      required final String url}) = _$LocationLinkImpl;
 
   @override
   String get name;
   @override
   String get url;
 
-  /// Create a copy of Location
+  /// Create a copy of LocationLink
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$LocationImplCopyWith<_$LocationImpl> get copyWith =>
+  _$$LocationLinkImplCopyWith<_$LocationLinkImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

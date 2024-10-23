@@ -5,7 +5,11 @@ part 'location.freezed.dart';
 @freezed
 class Location with _$Location {
   const factory Location({
+    required int id,
     required String name,
-    required String url,
+    required String type,
+    required String dimension,
+    required List<String> residents,
+    required DateTime created,
   }) = _Location;
 }

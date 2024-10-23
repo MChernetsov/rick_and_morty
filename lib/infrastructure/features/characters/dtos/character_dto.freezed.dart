@@ -27,7 +27,7 @@ mixin _$CharacterDto {
   String get type => throw _privateConstructorUsedError;
   String get gender => throw _privateConstructorUsedError;
   OriginDto get origin => throw _privateConstructorUsedError;
-  LocationDto get location => throw _privateConstructorUsedError;
+  LocationLinkDto get location => throw _privateConstructorUsedError;
   String get image => throw _privateConstructorUsedError;
   List<String> get episode => throw _privateConstructorUsedError;
   String get url => throw _privateConstructorUsedError;
@@ -57,14 +57,14 @@ abstract class $CharacterDtoCopyWith<$Res> {
       String type,
       String gender,
       OriginDto origin,
-      LocationDto location,
+      LocationLinkDto location,
       String image,
       List<String> episode,
       String url,
       DateTime created});
 
   $OriginDtoCopyWith<$Res> get origin;
-  $LocationDtoCopyWith<$Res> get location;
+  $LocationLinkDtoCopyWith<$Res> get location;
 }
 
 /// @nodoc
@@ -127,7 +127,7 @@ class _$CharacterDtoCopyWithImpl<$Res, $Val extends CharacterDto>
       location: null == location
           ? _value.location
           : location // ignore: cast_nullable_to_non_nullable
-              as LocationDto,
+              as LocationLinkDto,
       image: null == image
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
@@ -161,8 +161,8 @@ class _$CharacterDtoCopyWithImpl<$Res, $Val extends CharacterDto>
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $LocationDtoCopyWith<$Res> get location {
-    return $LocationDtoCopyWith<$Res>(_value.location, (value) {
+  $LocationLinkDtoCopyWith<$Res> get location {
+    return $LocationLinkDtoCopyWith<$Res>(_value.location, (value) {
       return _then(_value.copyWith(location: value) as $Val);
     });
   }
@@ -184,7 +184,7 @@ abstract class _$$CharacterDtoImplCopyWith<$Res>
       String type,
       String gender,
       OriginDto origin,
-      LocationDto location,
+      LocationLinkDto location,
       String image,
       List<String> episode,
       String url,
@@ -193,7 +193,7 @@ abstract class _$$CharacterDtoImplCopyWith<$Res>
   @override
   $OriginDtoCopyWith<$Res> get origin;
   @override
-  $LocationDtoCopyWith<$Res> get location;
+  $LocationLinkDtoCopyWith<$Res> get location;
 }
 
 /// @nodoc
@@ -254,7 +254,7 @@ class __$$CharacterDtoImplCopyWithImpl<$Res>
       location: null == location
           ? _value.location
           : location // ignore: cast_nullable_to_non_nullable
-              as LocationDto,
+              as LocationLinkDto,
       image: null == image
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
@@ -312,7 +312,7 @@ class _$CharacterDtoImpl extends _CharacterDto with DiagnosticableTreeMixin {
   @override
   final OriginDto origin;
   @override
-  final LocationDto location;
+  final LocationLinkDto location;
   @override
   final String image;
   final List<String> _episode;
@@ -414,7 +414,7 @@ abstract class _CharacterDto extends CharacterDto {
       required final String type,
       required final String gender,
       required final OriginDto origin,
-      required final LocationDto location,
+      required final LocationLinkDto location,
       required final String image,
       required final List<String> episode,
       required final String url,
@@ -439,7 +439,7 @@ abstract class _CharacterDto extends CharacterDto {
   @override
   OriginDto get origin;
   @override
-  LocationDto get location;
+  LocationLinkDto get location;
   @override
   String get image;
   @override
