@@ -20,4 +20,46 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get settings => 'Настройки';
+
+  @override
+  String get emptyCharacter => 'Персонаж с таким именем\nне найден';
+
+  @override
+  String get emptyLocation => 'Локации с таким названием\nне найдено';
+
+  @override
+  String get emptyEpisode => 'Эпизода с таким названием\nназванием нет';
+
+  @override
+  String get emptyFilter => 'По данным фильтра ничего\nне найдено';
+
+  @override
+  String get aliveStatus => 'Живой';
+
+  @override
+  String get deadStatus => 'Мертвый';
+
+  @override
+  String get unknownStatus => 'Неизвестно';
+
+  @override
+  String get man => 'Мужской';
+
+  @override
+  String get woman => 'Женский';
+
+  @override
+  String get unknown => 'Неизвестно';
+
+  @override
+  String get genderless => 'Бесполый';
+
+  @override
+  String get totalCharacters => 'Всего персонажей: ';
+
+  @override
+  String get foundCharacters => 'Найдено персонажей: ';
+
+  @override
+  String get searchCharacter => 'Найти персонажа ';
 }
