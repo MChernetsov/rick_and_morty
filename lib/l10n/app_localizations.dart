@@ -206,6 +206,18 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Найти персонажа '**
   String get searchCharacter;
+
+  /// No description provided for @episode.
+  ///
+  /// In ru, this message translates to:
+  /// **'Серия '**
+  String get episode;
+
+  /// No description provided for @season.
+  ///
+  /// In ru, this message translates to:
+  /// **'СЕЗОН '**
+  String get season;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

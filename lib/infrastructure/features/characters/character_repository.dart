@@ -38,7 +38,7 @@ class CharacterRepository implements ICharacterRepository {
 
     return CharacterList(
       characters: results.map((e) => e.toDomain()).toList(),
-      hasNext: result.info.next?.isNotEmpty ?? true,
+      hasNext: result.info.next?.isNotEmpty ?? false,
       count: result.info.count,
     );
   }

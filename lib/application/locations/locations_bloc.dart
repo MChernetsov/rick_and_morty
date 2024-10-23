@@ -107,7 +107,7 @@ class LocationsBloc extends Bloc<LocationsEvent, LocationsState> {
 
   FutureOr<void> _searchStringChanged(
       _SearchStringChanged event, Emitter<LocationsState> emit) async {
-    state.maybeMap(
+    await state.maybeMap(
       orElse: () {},
       loaded: (state) async {
         await Future.delayed(

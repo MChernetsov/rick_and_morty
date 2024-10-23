@@ -36,7 +36,7 @@ class LocationRepository implements ILocationRepository {
 
     return LocationsInfo(
       locations: results.map((e) => e.toDomain()).toList(),
-      hasNext: result.info.next?.isNotEmpty ?? true,
+      hasNext: result.info.next?.isNotEmpty ?? false,
       count: result.info.count,
     );
   }
