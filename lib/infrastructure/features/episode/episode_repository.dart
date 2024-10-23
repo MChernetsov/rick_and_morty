@@ -38,6 +38,11 @@ class EpisodeRepository implements IEpisodeRepository {
 
   @override
   Future<List<Episode>> getEpisodesByIds({required List<int> ids}) async {
+    if (ids.length == 1) {
+      final result = await getEpisode(id: ids.first);
+
+      return [result];
+    }
     final result = await episodeApi.getMultipleEpisodes(ids: ids.join(','));
 
     return result.map((e) => e.toDomain()).toList();

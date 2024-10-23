@@ -33,6 +33,7 @@ class DetailCharacterBloc
         character: event.character,
       ),
     );
+
     final episodes = await _episodeRepository.getEpisodesByIds(
       ids: event.character.episodes
           .map((e) => int.tryParse(e.split('/').last) ?? -1)
@@ -43,19 +44,23 @@ class DetailCharacterBloc
         int.tryParse(event.character.origin.url.split('/').last) ?? -1;
     final locationId =
         int.tryParse(event.character.location.url.split('/').last) ?? -1;
-    final locations = await _locationRepository.getLocationsByIds(
+    List<Location> locations = await _locationRepository.getLocationsByIds(
       ids: [
         originId,
         locationId,
-      ],
+      ].where((e) => e > 0).toList(),
     );
 
     emit(
       DetailCharacterState.loaded(
         character: event.character,
         episodes: episodes,
-        location: locations.firstWhere((element) => element.id == locationId),
-        origin: locations.firstWhere((element) => element.id == originId),
+        location: locations.map((e) => e.id).contains(locationId)
+            ? locations.firstWhere((element) => element.id == locationId)
+            : null,
+        origin: locations.map((e) => e.id).contains(originId)
+            ? locations.firstWhere((element) => element.id == originId)
+            : null,
       ),
     );
   }

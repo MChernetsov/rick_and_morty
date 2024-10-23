@@ -45,6 +45,11 @@ class CharacterRepository implements ICharacterRepository {
 
   @override
   Future<List<Character>> getCharactersByIds({required List<int> ids}) async {
+    if (ids.length == 1) {
+      final result = await getCharacter(id: ids.first);
+
+      return [result];
+    }
     final result =
         await charactersApi.getMultipleCharacters(ids: ids.join(','));
 

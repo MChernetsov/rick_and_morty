@@ -43,6 +43,11 @@ class LocationRepository implements ILocationRepository {
 
   @override
   Future<List<Location>> getLocationsByIds({required List<int> ids}) async {
+    if (ids.length == 1) {
+      final result = await getLocation(id: ids.first);
+
+      return [result];
+    }
     final result = await locationsApi.getMultipleLocations(ids: ids.join(','));
 
     return result.map((e) => e.toDomain()).toList();
