@@ -15,10 +15,15 @@ final appThemeDark = ThemeData(
     tertiaryContainer: Color(0xFF22A2BD),
   ),
   textTheme: TextTheme(
-    displayMedium: TextStyle(
+    displayLarge: TextStyle(
       fontWeight: FontWeight.w400,
       fontSize: 34,
       height: 40 / 34,
+    ),
+    displayMedium: TextStyle(
+      fontWeight: FontWeight.w700,
+      fontSize: 24,
+      height: 32 / 24,
     ),
     headlineMedium: TextStyle(
       fontWeight: FontWeight.w500,

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rick_and_morty/domain/characters/models/character.dart';
-import 'package:rick_and_morty/presentation/pages/characters_page/widgets/character_list_item.dart';
+import 'package:rick_and_morty/presentation/core/widgets/character_list_item.dart';
 
 class CharacterList extends StatefulWidget {
   const CharacterList({

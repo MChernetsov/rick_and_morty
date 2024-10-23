@@ -6,6 +6,8 @@ import 'package:injectable/injectable.dart';
 import 'package:rick_and_morty/domain/characters/models/character.dart';
 import 'package:rick_and_morty/domain/episode/i_episode_repository.dart';
 import 'package:rick_and_morty/domain/episode/models/episode.dart';
+import 'package:rick_and_morty/domain/locations/i_location_repository.dart';
+import 'package:rick_and_morty/domain/locations/models/location.dart';
 
 part 'detail_character_event.dart';
 part 'detail_character_state.dart';
@@ -15,9 +17,11 @@ part 'detail_character_bloc.freezed.dart';
 class DetailCharacterBloc
     extends Bloc<DetailCharacterEvent, DetailCharacterState> {
   final IEpisodeRepository _episodeRepository;
+  final ILocationRepository _locationRepository;
 
   DetailCharacterBloc(
     this._episodeRepository,
+    this._locationRepository,
   ) : super(const DetailCharacterState.initial()) {
     on<_Started>((event, emit) => _started(event, emit));
   }
@@ -29,16 +33,29 @@ class DetailCharacterBloc
         character: event.character,
       ),
     );
-    final locations = await _episodeRepository.getEpisodesByIds(
+    final episodes = await _episodeRepository.getEpisodesByIds(
       ids: event.character.episodes
           .map((e) => int.tryParse(e.split('/').last) ?? -1)
           .where((element) => element >= 0)
           .toList(),
     );
+    final originId =
+        int.tryParse(event.character.origin.url.split('/').last) ?? -1;
+    final locationId =
+        int.tryParse(event.character.location.url.split('/').last) ?? -1;
+    final locations = await _locationRepository.getLocationsByIds(
+      ids: [
+        originId,
+        locationId,
+      ],
+    );
+
     emit(
       DetailCharacterState.loaded(
         character: event.character,
-        episodes: locations,
+        episodes: episodes,
+        location: locations.firstWhere((element) => element.id == locationId),
+        origin: locations.firstWhere((element) => element.id == originId),
       ),
     );
   }

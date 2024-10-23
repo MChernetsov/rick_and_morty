@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'detail_character_bloc.dart';
+part of 'detail_location_bloc.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,21 +15,21 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
-mixin _$DetailCharacterEvent {
-  Character get character => throw _privateConstructorUsedError;
+mixin _$DetailLocationEvent {
+  Location get location => throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(Character character) started,
+    required TResult Function(Location location) started,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(Character character)? started,
+    TResult? Function(Location location)? started,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(Character character)? started,
+    TResult Function(Location location)? started,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -50,95 +50,94 @@ mixin _$DetailCharacterEvent {
   }) =>
       throw _privateConstructorUsedError;
 
-  /// Create a copy of DetailCharacterEvent
+  /// Create a copy of DetailLocationEvent
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $DetailCharacterEventCopyWith<DetailCharacterEvent> get copyWith =>
+  $DetailLocationEventCopyWith<DetailLocationEvent> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $DetailCharacterEventCopyWith<$Res> {
-  factory $DetailCharacterEventCopyWith(DetailCharacterEvent value,
-          $Res Function(DetailCharacterEvent) then) =
-      _$DetailCharacterEventCopyWithImpl<$Res, DetailCharacterEvent>;
+abstract class $DetailLocationEventCopyWith<$Res> {
+  factory $DetailLocationEventCopyWith(
+          DetailLocationEvent value, $Res Function(DetailLocationEvent) then) =
+      _$DetailLocationEventCopyWithImpl<$Res, DetailLocationEvent>;
   @useResult
-  $Res call({Character character});
+  $Res call({Location location});
 
-  $CharacterCopyWith<$Res> get character;
+  $LocationCopyWith<$Res> get location;
 }
 
 /// @nodoc
-class _$DetailCharacterEventCopyWithImpl<$Res,
-        $Val extends DetailCharacterEvent>
-    implements $DetailCharacterEventCopyWith<$Res> {
-  _$DetailCharacterEventCopyWithImpl(this._value, this._then);
+class _$DetailLocationEventCopyWithImpl<$Res, $Val extends DetailLocationEvent>
+    implements $DetailLocationEventCopyWith<$Res> {
+  _$DetailLocationEventCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of DetailCharacterEvent
+  /// Create a copy of DetailLocationEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? character = null,
+    Object? location = null,
   }) {
     return _then(_value.copyWith(
-      character: null == character
-          ? _value.character
-          : character // ignore: cast_nullable_to_non_nullable
-              as Character,
+      location: null == location
+          ? _value.location
+          : location // ignore: cast_nullable_to_non_nullable
+              as Location,
     ) as $Val);
   }
 
-  /// Create a copy of DetailCharacterEvent
+  /// Create a copy of DetailLocationEvent
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $CharacterCopyWith<$Res> get character {
-    return $CharacterCopyWith<$Res>(_value.character, (value) {
-      return _then(_value.copyWith(character: value) as $Val);
+  $LocationCopyWith<$Res> get location {
+    return $LocationCopyWith<$Res>(_value.location, (value) {
+      return _then(_value.copyWith(location: value) as $Val);
     });
   }
 }
 
 /// @nodoc
 abstract class _$$StartedImplCopyWith<$Res>
-    implements $DetailCharacterEventCopyWith<$Res> {
+    implements $DetailLocationEventCopyWith<$Res> {
   factory _$$StartedImplCopyWith(
           _$StartedImpl value, $Res Function(_$StartedImpl) then) =
       __$$StartedImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({Character character});
+  $Res call({Location location});
 
   @override
-  $CharacterCopyWith<$Res> get character;
+  $LocationCopyWith<$Res> get location;
 }
 
 /// @nodoc
 class __$$StartedImplCopyWithImpl<$Res>
-    extends _$DetailCharacterEventCopyWithImpl<$Res, _$StartedImpl>
+    extends _$DetailLocationEventCopyWithImpl<$Res, _$StartedImpl>
     implements _$$StartedImplCopyWith<$Res> {
   __$$StartedImplCopyWithImpl(
       _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of DetailCharacterEvent
+  /// Create a copy of DetailLocationEvent
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? character = null,
+    Object? location = null,
   }) {
     return _then(_$StartedImpl(
-      character: null == character
-          ? _value.character
-          : character // ignore: cast_nullable_to_non_nullable
-              as Character,
+      location: null == location
+          ? _value.location
+          : location // ignore: cast_nullable_to_non_nullable
+              as Location,
     ));
   }
 }
@@ -146,14 +145,14 @@ class __$$StartedImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$StartedImpl implements _Started {
-  const _$StartedImpl({required this.character});
+  const _$StartedImpl({required this.location});
 
   @override
-  final Character character;
+  final Location location;
 
   @override
   String toString() {
-    return 'DetailCharacterEvent.started(character: $character)';
+    return 'DetailLocationEvent.started(location: $location)';
   }
 
   @override
@@ -161,14 +160,14 @@ class _$StartedImpl implements _Started {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$StartedImpl &&
-            (identical(other.character, character) ||
-                other.character == character));
+            (identical(other.location, location) ||
+                other.location == location));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, character);
+  int get hashCode => Object.hash(runtimeType, location);
 
-  /// Create a copy of DetailCharacterEvent
+  /// Create a copy of DetailLocationEvent
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
@@ -179,27 +178,27 @@ class _$StartedImpl implements _Started {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(Character character) started,
+    required TResult Function(Location location) started,
   }) {
-    return started(character);
+    return started(location);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function(Character character)? started,
+    TResult? Function(Location location)? started,
   }) {
-    return started?.call(character);
+    return started?.call(location);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(Character character)? started,
+    TResult Function(Location location)? started,
     required TResult orElse(),
   }) {
     if (started != null) {
-      return started(character);
+      return started(location);
     }
     return orElse();
   }
@@ -233,13 +232,13 @@ class _$StartedImpl implements _Started {
   }
 }
 
-abstract class _Started implements DetailCharacterEvent {
-  const factory _Started({required final Character character}) = _$StartedImpl;
+abstract class _Started implements DetailLocationEvent {
+  const factory _Started({required final Location location}) = _$StartedImpl;
 
   @override
-  Character get character;
+  Location get location;
 
-  /// Create a copy of DetailCharacterEvent
+  /// Create a copy of DetailLocationEvent
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
@@ -248,32 +247,27 @@ abstract class _Started implements DetailCharacterEvent {
 }
 
 /// @nodoc
-mixin _$DetailCharacterState {
+mixin _$DetailLocationState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(Character character) loading,
-    required TResult Function(Character character, List<Episode> episodes,
-            Location origin, Location location)
+    required TResult Function(Location location) loading,
+    required TResult Function(Location location, List<Character> characters)
         loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(Character character)? loading,
-    TResult? Function(Character character, List<Episode> episodes,
-            Location origin, Location location)?
-        loaded,
+    TResult? Function(Location location)? loading,
+    TResult? Function(Location location, List<Character> characters)? loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(Character character)? loading,
-    TResult Function(Character character, List<Episode> episodes,
-            Location origin, Location location)?
-        loaded,
+    TResult Function(Location location)? loading,
+    TResult Function(Location location, List<Character> characters)? loaded,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -302,24 +296,23 @@ mixin _$DetailCharacterState {
 }
 
 /// @nodoc
-abstract class $DetailCharacterStateCopyWith<$Res> {
-  factory $DetailCharacterStateCopyWith(DetailCharacterState value,
-          $Res Function(DetailCharacterState) then) =
-      _$DetailCharacterStateCopyWithImpl<$Res, DetailCharacterState>;
+abstract class $DetailLocationStateCopyWith<$Res> {
+  factory $DetailLocationStateCopyWith(
+          DetailLocationState value, $Res Function(DetailLocationState) then) =
+      _$DetailLocationStateCopyWithImpl<$Res, DetailLocationState>;
 }
 
 /// @nodoc
-class _$DetailCharacterStateCopyWithImpl<$Res,
-        $Val extends DetailCharacterState>
-    implements $DetailCharacterStateCopyWith<$Res> {
-  _$DetailCharacterStateCopyWithImpl(this._value, this._then);
+class _$DetailLocationStateCopyWithImpl<$Res, $Val extends DetailLocationState>
+    implements $DetailLocationStateCopyWith<$Res> {
+  _$DetailLocationStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of DetailCharacterState
+  /// Create a copy of DetailLocationState
   /// with the given fields replaced by the non-null parameter values.
 }
 
@@ -332,13 +325,13 @@ abstract class _$$InitialImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$InitialImplCopyWithImpl<$Res>
-    extends _$DetailCharacterStateCopyWithImpl<$Res, _$InitialImpl>
+    extends _$DetailLocationStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
       _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of DetailCharacterState
+  /// Create a copy of DetailLocationState
   /// with the given fields replaced by the non-null parameter values.
 }
 
@@ -349,7 +342,7 @@ class _$InitialImpl implements _Initial {
 
   @override
   String toString() {
-    return 'DetailCharacterState.initial()';
+    return 'DetailLocationState.initial()';
   }
 
   @override
@@ -365,9 +358,8 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(Character character) loading,
-    required TResult Function(Character character, List<Episode> episodes,
-            Location origin, Location location)
+    required TResult Function(Location location) loading,
+    required TResult Function(Location location, List<Character> characters)
         loaded,
   }) {
     return initial();
@@ -377,10 +369,8 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(Character character)? loading,
-    TResult? Function(Character character, List<Episode> episodes,
-            Location origin, Location location)?
-        loaded,
+    TResult? Function(Location location)? loading,
+    TResult? Function(Location location, List<Character> characters)? loaded,
   }) {
     return initial?.call();
   }
@@ -389,10 +379,8 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(Character character)? loading,
-    TResult Function(Character character, List<Episode> episodes,
-            Location origin, Location location)?
-        loaded,
+    TResult Function(Location location)? loading,
+    TResult Function(Location location, List<Character> characters)? loaded,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -436,7 +424,7 @@ class _$InitialImpl implements _Initial {
   }
 }
 
-abstract class _Initial implements DetailCharacterState {
+abstract class _Initial implements DetailLocationState {
   const factory _Initial() = _$InitialImpl;
 }
 
@@ -446,41 +434,41 @@ abstract class _$$LoadingImplCopyWith<$Res> {
           _$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
       __$$LoadingImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({Character character});
+  $Res call({Location location});
 
-  $CharacterCopyWith<$Res> get character;
+  $LocationCopyWith<$Res> get location;
 }
 
 /// @nodoc
 class __$$LoadingImplCopyWithImpl<$Res>
-    extends _$DetailCharacterStateCopyWithImpl<$Res, _$LoadingImpl>
+    extends _$DetailLocationStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
   __$$LoadingImplCopyWithImpl(
       _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of DetailCharacterState
+  /// Create a copy of DetailLocationState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? character = null,
+    Object? location = null,
   }) {
     return _then(_$LoadingImpl(
-      character: null == character
-          ? _value.character
-          : character // ignore: cast_nullable_to_non_nullable
-              as Character,
+      location: null == location
+          ? _value.location
+          : location // ignore: cast_nullable_to_non_nullable
+              as Location,
     ));
   }
 
-  /// Create a copy of DetailCharacterState
+  /// Create a copy of DetailLocationState
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $CharacterCopyWith<$Res> get character {
-    return $CharacterCopyWith<$Res>(_value.character, (value) {
-      return _then(_value.copyWith(character: value));
+  $LocationCopyWith<$Res> get location {
+    return $LocationCopyWith<$Res>(_value.location, (value) {
+      return _then(_value.copyWith(location: value));
     });
   }
 }
@@ -488,14 +476,14 @@ class __$$LoadingImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$LoadingImpl implements _Loading {
-  const _$LoadingImpl({required this.character});
+  const _$LoadingImpl({required this.location});
 
   @override
-  final Character character;
+  final Location location;
 
   @override
   String toString() {
-    return 'DetailCharacterState.loading(character: $character)';
+    return 'DetailLocationState.loading(location: $location)';
   }
 
   @override
@@ -503,14 +491,14 @@ class _$LoadingImpl implements _Loading {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LoadingImpl &&
-            (identical(other.character, character) ||
-                other.character == character));
+            (identical(other.location, location) ||
+                other.location == location));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, character);
+  int get hashCode => Object.hash(runtimeType, location);
 
-  /// Create a copy of DetailCharacterState
+  /// Create a copy of DetailLocationState
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
@@ -522,38 +510,33 @@ class _$LoadingImpl implements _Loading {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(Character character) loading,
-    required TResult Function(Character character, List<Episode> episodes,
-            Location origin, Location location)
+    required TResult Function(Location location) loading,
+    required TResult Function(Location location, List<Character> characters)
         loaded,
   }) {
-    return loading(character);
+    return loading(location);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(Character character)? loading,
-    TResult? Function(Character character, List<Episode> episodes,
-            Location origin, Location location)?
-        loaded,
+    TResult? Function(Location location)? loading,
+    TResult? Function(Location location, List<Character> characters)? loaded,
   }) {
-    return loading?.call(character);
+    return loading?.call(location);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(Character character)? loading,
-    TResult Function(Character character, List<Episode> episodes,
-            Location origin, Location location)?
-        loaded,
+    TResult Function(Location location)? loading,
+    TResult Function(Location location, List<Character> characters)? loaded,
     required TResult orElse(),
   }) {
     if (loading != null) {
-      return loading(character);
+      return loading(location);
     }
     return orElse();
   }
@@ -593,12 +576,12 @@ class _$LoadingImpl implements _Loading {
   }
 }
 
-abstract class _Loading implements DetailCharacterState {
-  const factory _Loading({required final Character character}) = _$LoadingImpl;
+abstract class _Loading implements DetailLocationState {
+  const factory _Loading({required final Location location}) = _$LoadingImpl;
 
-  Character get character;
+  Location get location;
 
-  /// Create a copy of DetailCharacterState
+  /// Create a copy of DetailLocationState
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LoadingImplCopyWith<_$LoadingImpl> get copyWith =>
@@ -611,76 +594,40 @@ abstract class _$$LoadedImplCopyWith<$Res> {
           _$LoadedImpl value, $Res Function(_$LoadedImpl) then) =
       __$$LoadedImplCopyWithImpl<$Res>;
   @useResult
-  $Res call(
-      {Character character,
-      List<Episode> episodes,
-      Location origin,
-      Location location});
+  $Res call({Location location, List<Character> characters});
 
-  $CharacterCopyWith<$Res> get character;
-  $LocationCopyWith<$Res> get origin;
   $LocationCopyWith<$Res> get location;
 }
 
 /// @nodoc
 class __$$LoadedImplCopyWithImpl<$Res>
-    extends _$DetailCharacterStateCopyWithImpl<$Res, _$LoadedImpl>
+    extends _$DetailLocationStateCopyWithImpl<$Res, _$LoadedImpl>
     implements _$$LoadedImplCopyWith<$Res> {
   __$$LoadedImplCopyWithImpl(
       _$LoadedImpl _value, $Res Function(_$LoadedImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of DetailCharacterState
+  /// Create a copy of DetailLocationState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? character = null,
-    Object? episodes = null,
-    Object? origin = null,
     Object? location = null,
+    Object? characters = null,
   }) {
     return _then(_$LoadedImpl(
-      character: null == character
-          ? _value.character
-          : character // ignore: cast_nullable_to_non_nullable
-              as Character,
-      episodes: null == episodes
-          ? _value._episodes
-          : episodes // ignore: cast_nullable_to_non_nullable
-              as List<Episode>,
-      origin: null == origin
-          ? _value.origin
-          : origin // ignore: cast_nullable_to_non_nullable
-              as Location,
       location: null == location
           ? _value.location
           : location // ignore: cast_nullable_to_non_nullable
               as Location,
+      characters: null == characters
+          ? _value._characters
+          : characters // ignore: cast_nullable_to_non_nullable
+              as List<Character>,
     ));
   }
 
-  /// Create a copy of DetailCharacterState
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $CharacterCopyWith<$Res> get character {
-    return $CharacterCopyWith<$Res>(_value.character, (value) {
-      return _then(_value.copyWith(character: value));
-    });
-  }
-
-  /// Create a copy of DetailCharacterState
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @pragma('vm:prefer-inline')
-  $LocationCopyWith<$Res> get origin {
-    return $LocationCopyWith<$Res>(_value.origin, (value) {
-      return _then(_value.copyWith(origin: value));
-    });
-  }
-
-  /// Create a copy of DetailCharacterState
+  /// Create a copy of DetailLocationState
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
@@ -695,30 +642,22 @@ class __$$LoadedImplCopyWithImpl<$Res>
 
 class _$LoadedImpl implements _Loaded {
   const _$LoadedImpl(
-      {required this.character,
-      required final List<Episode> episodes,
-      required this.origin,
-      required this.location})
-      : _episodes = episodes;
+      {required this.location, required final List<Character> characters})
+      : _characters = characters;
 
   @override
-  final Character character;
-  final List<Episode> _episodes;
+  final Location location;
+  final List<Character> _characters;
   @override
-  List<Episode> get episodes {
-    if (_episodes is EqualUnmodifiableListView) return _episodes;
+  List<Character> get characters {
+    if (_characters is EqualUnmodifiableListView) return _characters;
     // ignore: implicit_dynamic_type
-    return EqualUnmodifiableListView(_episodes);
+    return EqualUnmodifiableListView(_characters);
   }
 
   @override
-  final Location origin;
-  @override
-  final Location location;
-
-  @override
   String toString() {
-    return 'DetailCharacterState.loaded(character: $character, episodes: $episodes, origin: $origin, location: $location)';
+    return 'DetailLocationState.loaded(location: $location, characters: $characters)';
   }
 
   @override
@@ -726,19 +665,17 @@ class _$LoadedImpl implements _Loaded {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LoadedImpl &&
-            (identical(other.character, character) ||
-                other.character == character) &&
-            const DeepCollectionEquality().equals(other._episodes, _episodes) &&
-            (identical(other.origin, origin) || other.origin == origin) &&
             (identical(other.location, location) ||
-                other.location == location));
+                other.location == location) &&
+            const DeepCollectionEquality()
+                .equals(other._characters, _characters));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, character,
-      const DeepCollectionEquality().hash(_episodes), origin, location);
+  int get hashCode => Object.hash(
+      runtimeType, location, const DeepCollectionEquality().hash(_characters));
 
-  /// Create a copy of DetailCharacterState
+  /// Create a copy of DetailLocationState
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
@@ -750,38 +687,33 @@ class _$LoadedImpl implements _Loaded {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(Character character) loading,
-    required TResult Function(Character character, List<Episode> episodes,
-            Location origin, Location location)
+    required TResult Function(Location location) loading,
+    required TResult Function(Location location, List<Character> characters)
         loaded,
   }) {
-    return loaded(character, episodes, origin, location);
+    return loaded(location, characters);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(Character character)? loading,
-    TResult? Function(Character character, List<Episode> episodes,
-            Location origin, Location location)?
-        loaded,
+    TResult? Function(Location location)? loading,
+    TResult? Function(Location location, List<Character> characters)? loaded,
   }) {
-    return loaded?.call(character, episodes, origin, location);
+    return loaded?.call(location, characters);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(Character character)? loading,
-    TResult Function(Character character, List<Episode> episodes,
-            Location origin, Location location)?
-        loaded,
+    TResult Function(Location location)? loading,
+    TResult Function(Location location, List<Character> characters)? loaded,
     required TResult orElse(),
   }) {
     if (loaded != null) {
-      return loaded(character, episodes, origin, location);
+      return loaded(location, characters);
     }
     return orElse();
   }
@@ -821,19 +753,15 @@ class _$LoadedImpl implements _Loaded {
   }
 }
 
-abstract class _Loaded implements DetailCharacterState {
+abstract class _Loaded implements DetailLocationState {
   const factory _Loaded(
-      {required final Character character,
-      required final List<Episode> episodes,
-      required final Location origin,
-      required final Location location}) = _$LoadedImpl;
+      {required final Location location,
+      required final List<Character> characters}) = _$LoadedImpl;
 
-  Character get character;
-  List<Episode> get episodes;
-  Location get origin;
   Location get location;
+  List<Character> get characters;
 
-  /// Create a copy of DetailCharacterState
+  /// Create a copy of DetailLocationState
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LoadedImplCopyWith<_$LoadedImpl> get copyWith =>

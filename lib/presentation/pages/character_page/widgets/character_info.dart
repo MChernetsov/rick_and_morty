@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:rick_and_morty/domain/characters/models/character.dart';
 import 'package:rick_and_morty/l10n/app_localizations.dart';
 import 'package:rick_and_morty/presentation/pages/character_page/widgets/character_episodes_list.dart';
-import 'package:rick_and_morty/presentation/pages/character_page/widgets/place_info.dart';
+import 'package:rick_and_morty/presentation/pages/character_page/widgets/characters_locations.dart';
 import 'package:rick_and_morty/presentation/routing/router.gr.dart';
 
 class CharacterInfo extends StatelessWidget {
@@ -32,7 +32,7 @@ class CharacterInfo extends StatelessWidget {
           ),
           child: Text(
             character.name,
-            style: theme.textTheme.displayMedium,
+            style: theme.textTheme.displayLarge,
             textAlign: TextAlign.center,
           ),
         ),
@@ -107,24 +107,8 @@ class CharacterInfo extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(
-          height: 20,
-        ),
-        PlaceInfo(
-          name: character.origin.name,
-          title: localizations.origin,
-          url: character.origin.url,
-        ),
-        SizedBox(
-          height: 24,
-        ),
-        PlaceInfo(
-          name: character.location.name,
-          title: localizations.location,
-          url: character.location.url,
-        ),
-        SizedBox(
-          height: 36,
+        CharactersLocations(
+          character: character,
         ),
         Divider(
           color: theme.dividerColor,

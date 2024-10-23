@@ -9,5 +9,7 @@ class DetailCharacterState with _$DetailCharacterState {
   const factory DetailCharacterState.loaded({
     required Character character,
     required List<Episode> episodes,
+    required Location origin,
+    required Location location,
   }) = _Loaded;
 }
