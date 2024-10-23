@@ -19,5 +19,10 @@
   "foundCharacters": "Найдено персонажей: ",
   "searchCharacter": "Найти персонажа ",
   "episode": "Серия ",
-  "season": "СЕЗОН "
+  "season": "СЕЗОН ",
+  "gender": "Пол",
+  "race": "Раса",
+  "origin": "Место рождения",
+  "location": "Местоположение",
+  "allEpisodes": "Все эпизоды"
 }

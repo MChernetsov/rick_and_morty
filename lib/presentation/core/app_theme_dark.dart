@@ -4,7 +4,7 @@ final appThemeDark = ThemeData(
   primaryColor: Color(0xFF43D049),
   unselectedWidgetColor: Color(0xFF5B6975),
   scaffoldBackgroundColor: Color(0xFF0B1E2D),
-  cardColor: Color(0xFF152A3A),
+  dividerColor: Color(0xFF152A3A),
   colorScheme: ColorScheme.dark(
     onSurface: Color(0xFFFFFFFF),
     error: Color(0xFFEB5757),
@@ -15,10 +15,20 @@ final appThemeDark = ThemeData(
     tertiaryContainer: Color(0xFF22A2BD),
   ),
   textTheme: TextTheme(
+    displayMedium: TextStyle(
+      fontWeight: FontWeight.w400,
+      fontSize: 34,
+      height: 40 / 34,
+    ),
     headlineMedium: TextStyle(
       fontWeight: FontWeight.w500,
       fontSize: 20,
       height: 28 / 20,
+    ),
+    headlineSmall: TextStyle(
+      fontWeight: FontWeight.w400,
+      fontSize: 13,
+      height: 19.5 / 13,
     ),
     labelLarge: TextStyle(
       fontWeight: FontWeight.w400,

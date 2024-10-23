@@ -22,7 +22,7 @@ class LocationListItem extends StatelessWidget {
           borderRadius: const BorderRadius.all(
             Radius.circular(20),
           ),
-          color: theme.cardColor,
+          color: theme.dividerColor,
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,

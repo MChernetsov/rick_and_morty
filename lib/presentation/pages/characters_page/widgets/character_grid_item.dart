@@ -1,7 +1,9 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:rick_and_morty/domain/characters/models/character.dart';
 import 'package:rick_and_morty/l10n/app_localizations.dart';
+import 'package:rick_and_morty/presentation/routing/router.gr.dart';
 
 class CharacterGridItem extends StatelessWidget {
   const CharacterGridItem({
@@ -17,7 +19,7 @@ class CharacterGridItem extends StatelessWidget {
     final theme = Theme.of(context);
     return GestureDetector(
       onTap: () {
-        // Todo: Navigate to detail character page
+        context.router.push(CharacterRoute(character: character));
       },
       child: Material(
         color: Colors.transparent,
