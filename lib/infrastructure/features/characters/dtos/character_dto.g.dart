@@ -15,7 +15,8 @@ _$CharacterDtoImpl _$$CharacterDtoImplFromJson(Map<String, dynamic> json) =>
       type: json['type'] as String,
       gender: json['gender'] as String,
       origin: OriginDto.fromJson(json['origin'] as Map<String, dynamic>),
-      location: LocationDto.fromJson(json['location'] as Map<String, dynamic>),
+      location:
+          LocationLinkDto.fromJson(json['location'] as Map<String, dynamic>),
       image: json['image'] as String,
       episode:
           (json['episode'] as List<dynamic>).map((e) => e as String).toList(),

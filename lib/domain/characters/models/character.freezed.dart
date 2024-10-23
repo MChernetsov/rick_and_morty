@@ -23,7 +23,7 @@ mixin _$Character {
   String get type => throw _privateConstructorUsedError;
   Gender get gender => throw _privateConstructorUsedError;
   Origin get origin => throw _privateConstructorUsedError;
-  Location get location => throw _privateConstructorUsedError;
+  LocationLink get location => throw _privateConstructorUsedError;
   String get image => throw _privateConstructorUsedError;
   List<String> get episodes => throw _privateConstructorUsedError;
   String get url => throw _privateConstructorUsedError;
@@ -49,14 +49,14 @@ abstract class $CharacterCopyWith<$Res> {
       String type,
       Gender gender,
       Origin origin,
-      Location location,
+      LocationLink location,
       String image,
       List<String> episodes,
       String url,
       DateTime createdAt});
 
   $OriginCopyWith<$Res> get origin;
-  $LocationCopyWith<$Res> get location;
+  $LocationLinkCopyWith<$Res> get location;
 }
 
 /// @nodoc
@@ -119,7 +119,7 @@ class _$CharacterCopyWithImpl<$Res, $Val extends Character>
       location: null == location
           ? _value.location
           : location // ignore: cast_nullable_to_non_nullable
-              as Location,
+              as LocationLink,
       image: null == image
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
@@ -153,8 +153,8 @@ class _$CharacterCopyWithImpl<$Res, $Val extends Character>
   /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
-  $LocationCopyWith<$Res> get location {
-    return $LocationCopyWith<$Res>(_value.location, (value) {
+  $LocationLinkCopyWith<$Res> get location {
+    return $LocationLinkCopyWith<$Res>(_value.location, (value) {
       return _then(_value.copyWith(location: value) as $Val);
     });
   }
@@ -176,7 +176,7 @@ abstract class _$$CharacterImplCopyWith<$Res>
       String type,
       Gender gender,
       Origin origin,
-      Location location,
+      LocationLink location,
       String image,
       List<String> episodes,
       String url,
@@ -185,7 +185,7 @@ abstract class _$$CharacterImplCopyWith<$Res>
   @override
   $OriginCopyWith<$Res> get origin;
   @override
-  $LocationCopyWith<$Res> get location;
+  $LocationLinkCopyWith<$Res> get location;
 }
 
 /// @nodoc
@@ -246,7 +246,7 @@ class __$$CharacterImplCopyWithImpl<$Res>
       location: null == location
           ? _value.location
           : location // ignore: cast_nullable_to_non_nullable
-              as Location,
+              as LocationLink,
       image: null == image
           ? _value.image
           : image // ignore: cast_nullable_to_non_nullable
@@ -300,7 +300,7 @@ class _$CharacterImpl implements _Character {
   @override
   final Origin origin;
   @override
-  final Location location;
+  final LocationLink location;
   @override
   final String image;
   final List<String> _episodes;
@@ -376,7 +376,7 @@ abstract class _Character implements Character {
       required final String type,
       required final Gender gender,
       required final Origin origin,
-      required final Location location,
+      required final LocationLink location,
       required final String image,
       required final List<String> episodes,
       required final String url,
@@ -397,7 +397,7 @@ abstract class _Character implements Character {
   @override
   Origin get origin;
   @override
-  Location get location;
+  LocationLink get location;
   @override
   String get image;
   @override

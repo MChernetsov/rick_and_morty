@@ -13,13 +13,20 @@ import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
 import 'package:rick_and_morty/application/characters/characters_bloc.dart'
     as _i520;
+import 'package:rick_and_morty/application/locations/locations_bloc.dart'
+    as _i689;
 import 'package:rick_and_morty/domain/characters/i_character_repository.dart'
     as _i556;
+import 'package:rick_and_morty/domain/locations/i_location_repository.dart'
+    as _i547;
 import 'package:rick_and_morty/infrastructure/api/characters_api.dart' as _i649;
+import 'package:rick_and_morty/infrastructure/api/location_api.dart' as _i832;
 import 'package:rick_and_morty/infrastructure/core/injection_module.dart'
     as _i200;
 import 'package:rick_and_morty/infrastructure/features/characters/character_repository.dart'
     as _i232;
+import 'package:rick_and_morty/infrastructure/features/location/location_repository.dart'
+    as _i977;
 import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
 extension GetItInjectableX on _i174.GetIt {
@@ -40,6 +47,11 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.lazySingleton<_i361.Dio>(() => injectionModule.dio);
     gh.factory<_i649.CharactersApi>(() => _i649.CharactersApi(gh<_i361.Dio>()));
+    gh.factory<_i832.LocationApi>(() => _i832.LocationApi(gh<_i361.Dio>()));
+    gh.lazySingleton<_i547.ILocationRepository>(
+        () => _i977.LocationRepository(gh<_i832.LocationApi>()));
+    gh.factory<_i689.LocationsBloc>(
+        () => _i689.LocationsBloc(gh<_i547.ILocationRepository>()));
     gh.lazySingleton<_i556.ICharacterRepository>(
         () => _i232.CharacterRepository(gh<_i649.CharactersApi>()));
     gh.factory<_i520.CharactersBloc>(

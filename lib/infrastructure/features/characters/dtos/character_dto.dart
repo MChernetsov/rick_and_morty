@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:rick_and_morty/domain/characters/models/character.dart';
-import 'package:rick_and_morty/infrastructure/features/characters/dtos/location_dto.dart';
+import 'package:rick_and_morty/infrastructure/features/characters/dtos/location_link_dto.dart';
 import 'package:rick_and_morty/infrastructure/features/characters/dtos/origin_dto.dart';
 
 part 'character_dto.freezed.dart';
@@ -17,7 +17,7 @@ class CharacterDto with _$CharacterDto {
     required String type,
     required String gender,
     required OriginDto origin,
-    required LocationDto location,
+    required LocationLinkDto location,
     required String image,
     required List<String> episode,
     required String url,
