@@ -25,6 +25,7 @@ dependencies:
   retrofit: ^4.4.1
   shared_preferences: ^2.3.2
   flutter_svg: ^2.0.10+1
+  cached_network_image: ^3.2.3
 
 
 

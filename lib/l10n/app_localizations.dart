@@ -122,6 +122,90 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Настройки'**
   String get settings;
+
+  /// No description provided for @emptyCharacter.
+  ///
+  /// In ru, this message translates to:
+  /// **'Персонаж с таким именем\nне найден'**
+  String get emptyCharacter;
+
+  /// No description provided for @emptyLocation.
+  ///
+  /// In ru, this message translates to:
+  /// **'Локации с таким названием\nне найдено'**
+  String get emptyLocation;
+
+  /// No description provided for @emptyEpisode.
+  ///
+  /// In ru, this message translates to:
+  /// **'Эпизода с таким названием\nназванием нет'**
+  String get emptyEpisode;
+
+  /// No description provided for @emptyFilter.
+  ///
+  /// In ru, this message translates to:
+  /// **'По данным фильтра ничего\nне найдено'**
+  String get emptyFilter;
+
+  /// No description provided for @aliveStatus.
+  ///
+  /// In ru, this message translates to:
+  /// **'Живой'**
+  String get aliveStatus;
+
+  /// No description provided for @deadStatus.
+  ///
+  /// In ru, this message translates to:
+  /// **'Мертвый'**
+  String get deadStatus;
+
+  /// No description provided for @unknownStatus.
+  ///
+  /// In ru, this message translates to:
+  /// **'Неизвестно'**
+  String get unknownStatus;
+
+  /// No description provided for @man.
+  ///
+  /// In ru, this message translates to:
+  /// **'Мужской'**
+  String get man;
+
+  /// No description provided for @woman.
+  ///
+  /// In ru, this message translates to:
+  /// **'Женский'**
+  String get woman;
+
+  /// No description provided for @unknown.
+  ///
+  /// In ru, this message translates to:
+  /// **'Неизвестно'**
+  String get unknown;
+
+  /// No description provided for @genderless.
+  ///
+  /// In ru, this message translates to:
+  /// **'Бесполый'**
+  String get genderless;
+
+  /// No description provided for @totalCharacters.
+  ///
+  /// In ru, this message translates to:
+  /// **'Всего персонажей: '**
+  String get totalCharacters;
+
+  /// No description provided for @foundCharacters.
+  ///
+  /// In ru, this message translates to:
+  /// **'Найдено персонажей: '**
+  String get foundCharacters;
+
+  /// No description provided for @searchCharacter.
+  ///
+  /// In ru, this message translates to:
+  /// **'Найти персонажа '**
+  String get searchCharacter;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

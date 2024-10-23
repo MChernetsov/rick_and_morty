@@ -3,5 +3,19 @@
   "characters": "Персонажи",
   "locations": "Локации",
   "episodes": "Эпизоды",
-  "settings": "Настройки"
+  "settings": "Настройки",
+  "emptyCharacter": "Персонаж с таким именем\nне найден",
+  "emptyLocation": "Локации с таким названием\nне найдено",
+  "emptyEpisode": "Эпизода с таким названием\nназванием нет",
+  "emptyFilter": "По данным фильтра ничего\nне найдено",
+  "aliveStatus": "Живой",
+  "deadStatus": "Мертвый",
+  "unknownStatus": "Неизвестно",
+  "man": "Мужской",
+  "woman": "Женский",
+  "unknown": "Неизвестно",
+  "genderless": "Бесполый",
+  "totalCharacters": "Всего персонажей: ",
+  "foundCharacters": "Найдено персонажей: ",
+  "searchCharacter": "Найти персонажа "
 }
