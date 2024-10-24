@@ -5,6 +5,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:rick_and_morty/domain/characters/i_character_repository.dart';
 import 'package:rick_and_morty/domain/characters/models/character.dart';
+import 'package:rick_and_morty/domain/characters/models/character_list.dart';
 import 'package:rick_and_morty/domain/characters/models/filter_info.dart';
 
 part 'characters_event.dart';
@@ -82,9 +83,18 @@ class CharactersBloc extends Bloc<CharactersEvent, CharactersState> {
             filterInfo: e.filterInfo,
           ),
         );
-        final result = await _repository.getCharacters(
-          filterInfo: e.filterInfo,
-        );
+        CharacterList result;
+        try {
+          result = await _repository.getCharacters(
+            filterInfo: e.filterInfo,
+          );
+        } catch (e) {
+          result = CharacterList(
+            characters: [],
+            hasNext: false,
+            count: 0,
+          );
+        }
 
         emit(state.copyWith(
           characters: result.characters,

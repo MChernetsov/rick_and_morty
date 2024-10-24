@@ -284,6 +284,78 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'РЕЗУЛЬТАТЫ ПОИСКА'**
   String get searchResults;
+
+  /// No description provided for @filters.
+  ///
+  /// In ru, this message translates to:
+  /// **'Фильтры'**
+  String get filters;
+
+  /// No description provided for @status.
+  ///
+  /// In ru, this message translates to:
+  /// **'СТАТУС'**
+  String get status;
+
+  /// No description provided for @genderCapital.
+  ///
+  /// In ru, this message translates to:
+  /// **'ПОЛ'**
+  String get genderCapital;
+
+  /// No description provided for @unselected.
+  ///
+  /// In ru, this message translates to:
+  /// **'Не выбран'**
+  String get unselected;
+
+  /// No description provided for @unselectedLocation.
+  ///
+  /// In ru, this message translates to:
+  /// **'Не выбрано'**
+  String get unselectedLocation;
+
+  /// No description provided for @filterBy.
+  ///
+  /// In ru, this message translates to:
+  /// **'ФИЛЬТРОВАТЬ ПО:'**
+  String get filterBy;
+
+  /// No description provided for @locationType.
+  ///
+  /// In ru, this message translates to:
+  /// **'Тип'**
+  String get locationType;
+
+  /// No description provided for @locationTypeSelect.
+  ///
+  /// In ru, this message translates to:
+  /// **'Выберите тип локации'**
+  String get locationTypeSelect;
+
+  /// No description provided for @locationDimension.
+  ///
+  /// In ru, this message translates to:
+  /// **'Измерение'**
+  String get locationDimension;
+
+  /// No description provided for @locationDimensionSelect.
+  ///
+  /// In ru, this message translates to:
+  /// **'Выберите измерение локации'**
+  String get locationDimensionSelect;
+
+  /// No description provided for @typeSelect.
+  ///
+  /// In ru, this message translates to:
+  /// **'Выберите тип'**
+  String get typeSelect;
+
+  /// No description provided for @dimensionSelect.
+  ///
+  /// In ru, this message translates to:
+  /// **'Выберите измерение'**
+  String get dimensionSelect;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

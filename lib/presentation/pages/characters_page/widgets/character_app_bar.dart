@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:rick_and_morty/application/characters/characters_bloc.dart';
+import 'package:rick_and_morty/domain/characters/models/filter_info.dart';
+import 'package:rick_and_morty/domain/filter/filter_type.dart';
 import 'package:rick_and_morty/domain/search/search_type.dart';
 import 'package:rick_and_morty/l10n/app_localizations.dart';
 import 'package:rick_and_morty/presentation/core/widgets/disabled_search_text_field.dart';
@@ -22,8 +24,23 @@ class CharacterAppbar extends StatelessWidget implements PreferredSizeWidget {
             children: [
               DisabledSearchTextField(
                 hint: AppLocalizations.of(context).searchCharacter,
-                onFilterTapped: () {
-                  // Todo: Implement navigating to filter page
+                hasFilter: state.maybeMap(
+                  orElse: () => false,
+                  loaded: (state) => state.filterInfo.filterNotEmpty,
+                ),
+                onFilterTapped: () async {
+                  final bloc = context.read<CharactersBloc>();
+
+                  final result = await context.router
+                      .push(FilterRoute(type: FilterType.character));
+
+                  if (result is FilterInfo) {
+                    bloc.add(
+                      CharactersEvent.filterChanged(
+                        filterInfo: result,
+                      ),
+                    );
+                  }
                 },
                 onSearchTapped: () {
                   context.router.push(SearchRoute(type: SearchType.character));

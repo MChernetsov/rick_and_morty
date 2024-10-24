@@ -31,6 +31,7 @@ class EpisodesAppBar extends StatelessWidget implements PreferredSizeWidget {
                 child: DisabledSearchTextField(
                   hint: AppLocalizations.of(context).searchEpisode,
                   onFilterTapped: null,
+                  hasFilter: false,
                   onSearchTapped: () {
                     context.router.push(SearchRoute(type: SearchType.episode));
                   },

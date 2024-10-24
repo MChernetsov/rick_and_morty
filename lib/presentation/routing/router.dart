@@ -36,5 +36,14 @@ class AppRouter extends RootStackRouter {
         AutoRoute(
           page: SearchRoute.page,
         ),
+        AutoRoute(
+          page: FilterRoute.page,
+        ),
+        AutoRoute(
+          page: FilterSelectDimensionRoute.page,
+        ),
+        AutoRoute(
+          page: FilterSelectTypeRoute.page,
+        ),
       ];
 }

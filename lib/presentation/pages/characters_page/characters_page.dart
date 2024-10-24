@@ -37,9 +37,11 @@ class CharactersPage extends StatelessWidget {
                 loaded: (state) {
                   if (state.characters.isEmpty &&
                       state.filterInfo.filterNotEmpty) {
-                    return EmptyState(
-                      text: localizations.emptyFilter,
-                      url: 'assets/images/empty_filter.png',
+                    return Center(
+                      child: EmptyState(
+                        text: localizations.emptyFilter,
+                        url: 'assets/images/empty_filter.png',
+                      ),
                     );
                   }
                   if (state.showList) {

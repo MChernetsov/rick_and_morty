@@ -6,6 +6,7 @@ import 'package:injectable/injectable.dart';
 import 'package:rick_and_morty/domain/locations/i_location_repository.dart';
 import 'package:rick_and_morty/domain/locations/models/location.dart';
 import 'package:rick_and_morty/domain/locations/models/location_filter_info.dart';
+import 'package:rick_and_morty/domain/locations/models/locations_info.dart';
 
 part 'locations_event.dart';
 part 'locations_state.dart';
@@ -79,9 +80,19 @@ class LocationsBloc extends Bloc<LocationsEvent, LocationsState> {
             filterInfo: e.filterInfo,
           ),
         );
-        final result = await _repository.getLocations(
-          filterInfo: e.filterInfo,
-        );
+
+        LocationsInfo result;
+        try {
+          result = await _repository.getLocations(
+            filterInfo: e.filterInfo,
+          );
+        } catch (e) {
+          result = LocationsInfo(
+            locations: [],
+            hasNext: false,
+            count: 0,
+          );
+        }
 
         emit(state.copyWith(
           locations: result.locations,
