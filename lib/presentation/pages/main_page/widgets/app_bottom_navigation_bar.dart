@@ -28,7 +28,7 @@ class _AppBottomNavigationBarState extends State<AppBottomNavigationBar> {
 
     // Todo fix incorrect routing display.
     return Container(
-      color: theme.dividerColor,
+      color: theme.bottomAppBarTheme.color,
       child: SafeArea(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
