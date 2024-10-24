@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:bloc_concurrency/bloc_concurrency.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:rick_and_morty/domain/characters/i_character_repository.dart';
@@ -18,17 +17,13 @@ class CharactersBloc extends Bloc<CharactersEvent, CharactersState> {
   CharactersBloc(this._repository) : super(const CharactersState.initial()) {
     on<CharactersEvent>(
       (event, emit) async {
-        await event.maybeMap(
-            orElse: () {},
-            started: (_) => _started(emit),
-            nextPageLoaded: (_) => _nextPageLoaded(emit),
-            filterChanged: (e) => _filterChanged(e, emit),
-            listToggled: (_) => _listTogged(emit));
+        await event.map(
+          started: (_) => _started(emit),
+          nextPageLoaded: (_) => _nextPageLoaded(emit),
+          filterChanged: (e) => _filterChanged(e, emit),
+          listToggled: (_) => _listTogged(emit),
+        );
       },
-    );
-    on<_SearchStringChanged>(
-      (event, emit) async => _searchStringChanged(event, emit),
-      transformer: restartable(),
     );
   }
 
@@ -52,7 +47,6 @@ class CharactersBloc extends Bloc<CharactersEvent, CharactersState> {
         totalCount: result.count,
         allPagesLoaded: !result.hasNext,
         filterInfo: filterInfo,
-        searchString: '',
       ),
     );
   }
@@ -67,7 +61,6 @@ class CharactersBloc extends Bloc<CharactersEvent, CharactersState> {
         final result = await _repository.getCharacters(
           filterInfo: state.filterInfo,
           page: state.page + 1,
-          search: state.searchString,
         );
         emit(state.copyWith(
           characters: [...state.characters, ...result.characters],
@@ -87,12 +80,10 @@ class CharactersBloc extends Bloc<CharactersEvent, CharactersState> {
         emit(
           CharactersState.loading(
             filterInfo: e.filterInfo,
-            searchString: state.searchString,
           ),
         );
         final result = await _repository.getCharacters(
           filterInfo: e.filterInfo,
-          search: state.searchString,
         );
 
         emit(state.copyWith(
@@ -103,39 +94,6 @@ class CharactersBloc extends Bloc<CharactersEvent, CharactersState> {
           allPagesLoaded: !result.hasNext,
           filterInfo: e.filterInfo,
         ));
-      },
-    );
-  }
-
-  FutureOr<void> _searchStringChanged(
-      _SearchStringChanged event, Emitter<CharactersState> emit) async {
-    await state.maybeMap(
-      orElse: () {},
-      loaded: (state) async {
-        await Future.delayed(
-          Duration(milliseconds: 500),
-        );
-        emit(
-          CharactersState.loading(
-            filterInfo: state.filterInfo,
-            searchString: event.searchString,
-          ),
-        );
-        final result = await _repository.getCharacters(
-          filterInfo: state.filterInfo,
-          search: event.searchString,
-        );
-
-        emit(
-          state.copyWith(
-            characters: result.characters,
-            totalCount: result.count,
-            pageLoading: false,
-            page: 1,
-            allPagesLoaded: !result.hasNext,
-            searchString: event.searchString,
-          ),
-        );
       },
     );
   }

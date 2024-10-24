@@ -35,13 +35,6 @@ class LocationsPage extends StatelessWidget {
                 ),
                 loaded: (state) {
                   if (state.locations.isEmpty &&
-                      state.searchString.isNotEmpty) {
-                    return EmptyState(
-                      text: localizations.emptyLocation,
-                      url: 'assets/images/empty_location.png',
-                    );
-                  }
-                  if (state.locations.isEmpty &&
                       state.filterInfo.filterNotEmpty) {
                     return EmptyState(
                       text: localizations.emptyFilter,

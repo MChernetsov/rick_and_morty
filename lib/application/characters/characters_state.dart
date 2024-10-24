@@ -6,7 +6,6 @@ class CharactersState with _$CharactersState {
 
   const factory CharactersState.loading({
     required FilterInfo filterInfo,
-    required String searchString,
   }) = _Loading;
 
   const factory CharactersState.loaded({
@@ -15,7 +14,6 @@ class CharactersState with _$CharactersState {
     required int page,
     required bool allPagesLoaded,
     required FilterInfo filterInfo,
-    required String searchString,
     required bool showList,
     required int totalCount,
   }) = _Loaded;

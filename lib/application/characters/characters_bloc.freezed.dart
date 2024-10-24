@@ -21,7 +21,6 @@ mixin _$CharactersEvent {
     required TResult Function() started,
     required TResult Function() nextPageLoaded,
     required TResult Function(FilterInfo filterInfo) filterChanged,
-    required TResult Function(String searchString) searchStringChanged,
     required TResult Function() listToggled,
   }) =>
       throw _privateConstructorUsedError;
@@ -30,7 +29,6 @@ mixin _$CharactersEvent {
     TResult? Function()? started,
     TResult? Function()? nextPageLoaded,
     TResult? Function(FilterInfo filterInfo)? filterChanged,
-    TResult? Function(String searchString)? searchStringChanged,
     TResult? Function()? listToggled,
   }) =>
       throw _privateConstructorUsedError;
@@ -39,7 +37,6 @@ mixin _$CharactersEvent {
     TResult Function()? started,
     TResult Function()? nextPageLoaded,
     TResult Function(FilterInfo filterInfo)? filterChanged,
-    TResult Function(String searchString)? searchStringChanged,
     TResult Function()? listToggled,
     required TResult orElse(),
   }) =>
@@ -49,7 +46,6 @@ mixin _$CharactersEvent {
     required TResult Function(_Started value) started,
     required TResult Function(_NextPageLoaded value) nextPageLoaded,
     required TResult Function(_FilterChanged value) filterChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
     required TResult Function(_ListToggled value) listToggled,
   }) =>
       throw _privateConstructorUsedError;
@@ -58,7 +54,6 @@ mixin _$CharactersEvent {
     TResult? Function(_Started value)? started,
     TResult? Function(_NextPageLoaded value)? nextPageLoaded,
     TResult? Function(_FilterChanged value)? filterChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
     TResult? Function(_ListToggled value)? listToggled,
   }) =>
       throw _privateConstructorUsedError;
@@ -67,7 +62,6 @@ mixin _$CharactersEvent {
     TResult Function(_Started value)? started,
     TResult Function(_NextPageLoaded value)? nextPageLoaded,
     TResult Function(_FilterChanged value)? filterChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
     TResult Function(_ListToggled value)? listToggled,
     required TResult orElse(),
   }) =>
@@ -139,7 +133,6 @@ class _$StartedImpl implements _Started {
     required TResult Function() started,
     required TResult Function() nextPageLoaded,
     required TResult Function(FilterInfo filterInfo) filterChanged,
-    required TResult Function(String searchString) searchStringChanged,
     required TResult Function() listToggled,
   }) {
     return started();
@@ -151,7 +144,6 @@ class _$StartedImpl implements _Started {
     TResult? Function()? started,
     TResult? Function()? nextPageLoaded,
     TResult? Function(FilterInfo filterInfo)? filterChanged,
-    TResult? Function(String searchString)? searchStringChanged,
     TResult? Function()? listToggled,
   }) {
     return started?.call();
@@ -163,7 +155,6 @@ class _$StartedImpl implements _Started {
     TResult Function()? started,
     TResult Function()? nextPageLoaded,
     TResult Function(FilterInfo filterInfo)? filterChanged,
-    TResult Function(String searchString)? searchStringChanged,
     TResult Function()? listToggled,
     required TResult orElse(),
   }) {
@@ -179,7 +170,6 @@ class _$StartedImpl implements _Started {
     required TResult Function(_Started value) started,
     required TResult Function(_NextPageLoaded value) nextPageLoaded,
     required TResult Function(_FilterChanged value) filterChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
     required TResult Function(_ListToggled value) listToggled,
   }) {
     return started(this);
@@ -191,7 +181,6 @@ class _$StartedImpl implements _Started {
     TResult? Function(_Started value)? started,
     TResult? Function(_NextPageLoaded value)? nextPageLoaded,
     TResult? Function(_FilterChanged value)? filterChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
     TResult? Function(_ListToggled value)? listToggled,
   }) {
     return started?.call(this);
@@ -203,7 +192,6 @@ class _$StartedImpl implements _Started {
     TResult Function(_Started value)? started,
     TResult Function(_NextPageLoaded value)? nextPageLoaded,
     TResult Function(_FilterChanged value)? filterChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
     TResult Function(_ListToggled value)? listToggled,
     required TResult orElse(),
   }) {
@@ -262,7 +250,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
     required TResult Function() started,
     required TResult Function() nextPageLoaded,
     required TResult Function(FilterInfo filterInfo) filterChanged,
-    required TResult Function(String searchString) searchStringChanged,
     required TResult Function() listToggled,
   }) {
     return nextPageLoaded();
@@ -274,7 +261,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
     TResult? Function()? started,
     TResult? Function()? nextPageLoaded,
     TResult? Function(FilterInfo filterInfo)? filterChanged,
-    TResult? Function(String searchString)? searchStringChanged,
     TResult? Function()? listToggled,
   }) {
     return nextPageLoaded?.call();
@@ -286,7 +272,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
     TResult Function()? started,
     TResult Function()? nextPageLoaded,
     TResult Function(FilterInfo filterInfo)? filterChanged,
-    TResult Function(String searchString)? searchStringChanged,
     TResult Function()? listToggled,
     required TResult orElse(),
   }) {
@@ -302,7 +287,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
     required TResult Function(_Started value) started,
     required TResult Function(_NextPageLoaded value) nextPageLoaded,
     required TResult Function(_FilterChanged value) filterChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
     required TResult Function(_ListToggled value) listToggled,
   }) {
     return nextPageLoaded(this);
@@ -314,7 +298,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
     TResult? Function(_Started value)? started,
     TResult? Function(_NextPageLoaded value)? nextPageLoaded,
     TResult? Function(_FilterChanged value)? filterChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
     TResult? Function(_ListToggled value)? listToggled,
   }) {
     return nextPageLoaded?.call(this);
@@ -326,7 +309,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
     TResult Function(_Started value)? started,
     TResult Function(_NextPageLoaded value)? nextPageLoaded,
     TResult Function(_FilterChanged value)? filterChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
     TResult Function(_ListToggled value)? listToggled,
     required TResult orElse(),
   }) {
@@ -425,7 +407,6 @@ class _$FilterChangedImpl implements _FilterChanged {
     required TResult Function() started,
     required TResult Function() nextPageLoaded,
     required TResult Function(FilterInfo filterInfo) filterChanged,
-    required TResult Function(String searchString) searchStringChanged,
     required TResult Function() listToggled,
   }) {
     return filterChanged(filterInfo);
@@ -437,7 +418,6 @@ class _$FilterChangedImpl implements _FilterChanged {
     TResult? Function()? started,
     TResult? Function()? nextPageLoaded,
     TResult? Function(FilterInfo filterInfo)? filterChanged,
-    TResult? Function(String searchString)? searchStringChanged,
     TResult? Function()? listToggled,
   }) {
     return filterChanged?.call(filterInfo);
@@ -449,7 +429,6 @@ class _$FilterChangedImpl implements _FilterChanged {
     TResult Function()? started,
     TResult Function()? nextPageLoaded,
     TResult Function(FilterInfo filterInfo)? filterChanged,
-    TResult Function(String searchString)? searchStringChanged,
     TResult Function()? listToggled,
     required TResult orElse(),
   }) {
@@ -465,7 +444,6 @@ class _$FilterChangedImpl implements _FilterChanged {
     required TResult Function(_Started value) started,
     required TResult Function(_NextPageLoaded value) nextPageLoaded,
     required TResult Function(_FilterChanged value) filterChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
     required TResult Function(_ListToggled value) listToggled,
   }) {
     return filterChanged(this);
@@ -477,7 +455,6 @@ class _$FilterChangedImpl implements _FilterChanged {
     TResult? Function(_Started value)? started,
     TResult? Function(_NextPageLoaded value)? nextPageLoaded,
     TResult? Function(_FilterChanged value)? filterChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
     TResult? Function(_ListToggled value)? listToggled,
   }) {
     return filterChanged?.call(this);
@@ -489,7 +466,6 @@ class _$FilterChangedImpl implements _FilterChanged {
     TResult Function(_Started value)? started,
     TResult Function(_NextPageLoaded value)? nextPageLoaded,
     TResult Function(_FilterChanged value)? filterChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
     TResult Function(_ListToggled value)? listToggled,
     required TResult orElse(),
   }) {
@@ -510,167 +486,6 @@ abstract class _FilterChanged implements CharactersEvent {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$FilterChangedImplCopyWith<_$FilterChangedImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$SearchStringChangedImplCopyWith<$Res> {
-  factory _$$SearchStringChangedImplCopyWith(_$SearchStringChangedImpl value,
-          $Res Function(_$SearchStringChangedImpl) then) =
-      __$$SearchStringChangedImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String searchString});
-}
-
-/// @nodoc
-class __$$SearchStringChangedImplCopyWithImpl<$Res>
-    extends _$CharactersEventCopyWithImpl<$Res, _$SearchStringChangedImpl>
-    implements _$$SearchStringChangedImplCopyWith<$Res> {
-  __$$SearchStringChangedImplCopyWithImpl(_$SearchStringChangedImpl _value,
-      $Res Function(_$SearchStringChangedImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of CharactersEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? searchString = null,
-  }) {
-    return _then(_$SearchStringChangedImpl(
-      searchString: null == searchString
-          ? _value.searchString
-          : searchString // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$SearchStringChangedImpl implements _SearchStringChanged {
-  const _$SearchStringChangedImpl({required this.searchString});
-
-  @override
-  final String searchString;
-
-  @override
-  String toString() {
-    return 'CharactersEvent.searchStringChanged(searchString: $searchString)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SearchStringChangedImpl &&
-            (identical(other.searchString, searchString) ||
-                other.searchString == searchString));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, searchString);
-
-  /// Create a copy of CharactersEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SearchStringChangedImplCopyWith<_$SearchStringChangedImpl> get copyWith =>
-      __$$SearchStringChangedImplCopyWithImpl<_$SearchStringChangedImpl>(
-          this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() started,
-    required TResult Function() nextPageLoaded,
-    required TResult Function(FilterInfo filterInfo) filterChanged,
-    required TResult Function(String searchString) searchStringChanged,
-    required TResult Function() listToggled,
-  }) {
-    return searchStringChanged(searchString);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? started,
-    TResult? Function()? nextPageLoaded,
-    TResult? Function(FilterInfo filterInfo)? filterChanged,
-    TResult? Function(String searchString)? searchStringChanged,
-    TResult? Function()? listToggled,
-  }) {
-    return searchStringChanged?.call(searchString);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function()? nextPageLoaded,
-    TResult Function(FilterInfo filterInfo)? filterChanged,
-    TResult Function(String searchString)? searchStringChanged,
-    TResult Function()? listToggled,
-    required TResult orElse(),
-  }) {
-    if (searchStringChanged != null) {
-      return searchStringChanged(searchString);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Started value) started,
-    required TResult Function(_NextPageLoaded value) nextPageLoaded,
-    required TResult Function(_FilterChanged value) filterChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
-    required TResult Function(_ListToggled value) listToggled,
-  }) {
-    return searchStringChanged(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Started value)? started,
-    TResult? Function(_NextPageLoaded value)? nextPageLoaded,
-    TResult? Function(_FilterChanged value)? filterChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
-    TResult? Function(_ListToggled value)? listToggled,
-  }) {
-    return searchStringChanged?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_NextPageLoaded value)? nextPageLoaded,
-    TResult Function(_FilterChanged value)? filterChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
-    TResult Function(_ListToggled value)? listToggled,
-    required TResult orElse(),
-  }) {
-    if (searchStringChanged != null) {
-      return searchStringChanged(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _SearchStringChanged implements CharactersEvent {
-  const factory _SearchStringChanged({required final String searchString}) =
-      _$SearchStringChangedImpl;
-
-  String get searchString;
-
-  /// Create a copy of CharactersEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SearchStringChangedImplCopyWith<_$SearchStringChangedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -718,7 +533,6 @@ class _$ListToggledImpl implements _ListToggled {
     required TResult Function() started,
     required TResult Function() nextPageLoaded,
     required TResult Function(FilterInfo filterInfo) filterChanged,
-    required TResult Function(String searchString) searchStringChanged,
     required TResult Function() listToggled,
   }) {
     return listToggled();
@@ -730,7 +544,6 @@ class _$ListToggledImpl implements _ListToggled {
     TResult? Function()? started,
     TResult? Function()? nextPageLoaded,
     TResult? Function(FilterInfo filterInfo)? filterChanged,
-    TResult? Function(String searchString)? searchStringChanged,
     TResult? Function()? listToggled,
   }) {
     return listToggled?.call();
@@ -742,7 +555,6 @@ class _$ListToggledImpl implements _ListToggled {
     TResult Function()? started,
     TResult Function()? nextPageLoaded,
     TResult Function(FilterInfo filterInfo)? filterChanged,
-    TResult Function(String searchString)? searchStringChanged,
     TResult Function()? listToggled,
     required TResult orElse(),
   }) {
@@ -758,7 +570,6 @@ class _$ListToggledImpl implements _ListToggled {
     required TResult Function(_Started value) started,
     required TResult Function(_NextPageLoaded value) nextPageLoaded,
     required TResult Function(_FilterChanged value) filterChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
     required TResult Function(_ListToggled value) listToggled,
   }) {
     return listToggled(this);
@@ -770,7 +581,6 @@ class _$ListToggledImpl implements _ListToggled {
     TResult? Function(_Started value)? started,
     TResult? Function(_NextPageLoaded value)? nextPageLoaded,
     TResult? Function(_FilterChanged value)? filterChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
     TResult? Function(_ListToggled value)? listToggled,
   }) {
     return listToggled?.call(this);
@@ -782,7 +592,6 @@ class _$ListToggledImpl implements _ListToggled {
     TResult Function(_Started value)? started,
     TResult Function(_NextPageLoaded value)? nextPageLoaded,
     TResult Function(_FilterChanged value)? filterChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
     TResult Function(_ListToggled value)? listToggled,
     required TResult orElse(),
   }) {
@@ -802,15 +611,13 @@ mixin _$CharactersState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(FilterInfo filterInfo, String searchString)
-        loading,
+    required TResult Function(FilterInfo filterInfo) loading,
     required TResult Function(
             List<Character> characters,
             bool pageLoading,
             int page,
             bool allPagesLoaded,
             FilterInfo filterInfo,
-            String searchString,
             bool showList,
             int totalCount)
         loaded,
@@ -819,14 +626,13 @@ mixin _$CharactersState {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(FilterInfo filterInfo, String searchString)? loading,
+    TResult? Function(FilterInfo filterInfo)? loading,
     TResult? Function(
             List<Character> characters,
             bool pageLoading,
             int page,
             bool allPagesLoaded,
             FilterInfo filterInfo,
-            String searchString,
             bool showList,
             int totalCount)?
         loaded,
@@ -835,14 +641,13 @@ mixin _$CharactersState {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(FilterInfo filterInfo, String searchString)? loading,
+    TResult Function(FilterInfo filterInfo)? loading,
     TResult Function(
             List<Character> characters,
             bool pageLoading,
             int page,
             bool allPagesLoaded,
             FilterInfo filterInfo,
-            String searchString,
             bool showList,
             int totalCount)?
         loaded,
@@ -936,15 +741,13 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(FilterInfo filterInfo, String searchString)
-        loading,
+    required TResult Function(FilterInfo filterInfo) loading,
     required TResult Function(
             List<Character> characters,
             bool pageLoading,
             int page,
             bool allPagesLoaded,
             FilterInfo filterInfo,
-            String searchString,
             bool showList,
             int totalCount)
         loaded,
@@ -956,14 +759,13 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(FilterInfo filterInfo, String searchString)? loading,
+    TResult? Function(FilterInfo filterInfo)? loading,
     TResult? Function(
             List<Character> characters,
             bool pageLoading,
             int page,
             bool allPagesLoaded,
             FilterInfo filterInfo,
-            String searchString,
             bool showList,
             int totalCount)?
         loaded,
@@ -975,14 +777,13 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(FilterInfo filterInfo, String searchString)? loading,
+    TResult Function(FilterInfo filterInfo)? loading,
     TResult Function(
             List<Character> characters,
             bool pageLoading,
             int page,
             bool allPagesLoaded,
             FilterInfo filterInfo,
-            String searchString,
             bool showList,
             int totalCount)?
         loaded,
@@ -1039,7 +840,7 @@ abstract class _$$LoadingImplCopyWith<$Res> {
           _$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
       __$$LoadingImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({FilterInfo filterInfo, String searchString});
+  $Res call({FilterInfo filterInfo});
 
   $FilterInfoCopyWith<$Res> get filterInfo;
 }
@@ -1058,17 +859,12 @@ class __$$LoadingImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? filterInfo = null,
-    Object? searchString = null,
   }) {
     return _then(_$LoadingImpl(
       filterInfo: null == filterInfo
           ? _value.filterInfo
           : filterInfo // ignore: cast_nullable_to_non_nullable
               as FilterInfo,
-      searchString: null == searchString
-          ? _value.searchString
-          : searchString // ignore: cast_nullable_to_non_nullable
-              as String,
     ));
   }
 
@@ -1086,16 +882,14 @@ class __$$LoadingImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$LoadingImpl implements _Loading {
-  const _$LoadingImpl({required this.filterInfo, required this.searchString});
+  const _$LoadingImpl({required this.filterInfo});
 
   @override
   final FilterInfo filterInfo;
-  @override
-  final String searchString;
 
   @override
   String toString() {
-    return 'CharactersState.loading(filterInfo: $filterInfo, searchString: $searchString)';
+    return 'CharactersState.loading(filterInfo: $filterInfo)';
   }
 
   @override
@@ -1104,13 +898,11 @@ class _$LoadingImpl implements _Loading {
         (other.runtimeType == runtimeType &&
             other is _$LoadingImpl &&
             (identical(other.filterInfo, filterInfo) ||
-                other.filterInfo == filterInfo) &&
-            (identical(other.searchString, searchString) ||
-                other.searchString == searchString));
+                other.filterInfo == filterInfo));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, filterInfo, searchString);
+  int get hashCode => Object.hash(runtimeType, filterInfo);
 
   /// Create a copy of CharactersState
   /// with the given fields replaced by the non-null parameter values.
@@ -1124,60 +916,56 @@ class _$LoadingImpl implements _Loading {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(FilterInfo filterInfo, String searchString)
-        loading,
+    required TResult Function(FilterInfo filterInfo) loading,
     required TResult Function(
             List<Character> characters,
             bool pageLoading,
             int page,
             bool allPagesLoaded,
             FilterInfo filterInfo,
-            String searchString,
             bool showList,
             int totalCount)
         loaded,
   }) {
-    return loading(filterInfo, searchString);
+    return loading(filterInfo);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(FilterInfo filterInfo, String searchString)? loading,
+    TResult? Function(FilterInfo filterInfo)? loading,
     TResult? Function(
             List<Character> characters,
             bool pageLoading,
             int page,
             bool allPagesLoaded,
             FilterInfo filterInfo,
-            String searchString,
             bool showList,
             int totalCount)?
         loaded,
   }) {
-    return loading?.call(filterInfo, searchString);
+    return loading?.call(filterInfo);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(FilterInfo filterInfo, String searchString)? loading,
+    TResult Function(FilterInfo filterInfo)? loading,
     TResult Function(
             List<Character> characters,
             bool pageLoading,
             int page,
             bool allPagesLoaded,
             FilterInfo filterInfo,
-            String searchString,
             bool showList,
             int totalCount)?
         loaded,
     required TResult orElse(),
   }) {
     if (loading != null) {
-      return loading(filterInfo, searchString);
+      return loading(filterInfo);
     }
     return orElse();
   }
@@ -1218,12 +1006,10 @@ class _$LoadingImpl implements _Loading {
 }
 
 abstract class _Loading implements CharactersState {
-  const factory _Loading(
-      {required final FilterInfo filterInfo,
-      required final String searchString}) = _$LoadingImpl;
+  const factory _Loading({required final FilterInfo filterInfo}) =
+      _$LoadingImpl;
 
   FilterInfo get filterInfo;
-  String get searchString;
 
   /// Create a copy of CharactersState
   /// with the given fields replaced by the non-null parameter values.
@@ -1244,7 +1030,6 @@ abstract class _$$LoadedImplCopyWith<$Res> {
       int page,
       bool allPagesLoaded,
       FilterInfo filterInfo,
-      String searchString,
       bool showList,
       int totalCount});
 
@@ -1269,7 +1054,6 @@ class __$$LoadedImplCopyWithImpl<$Res>
     Object? page = null,
     Object? allPagesLoaded = null,
     Object? filterInfo = null,
-    Object? searchString = null,
     Object? showList = null,
     Object? totalCount = null,
   }) {
@@ -1294,10 +1078,6 @@ class __$$LoadedImplCopyWithImpl<$Res>
           ? _value.filterInfo
           : filterInfo // ignore: cast_nullable_to_non_nullable
               as FilterInfo,
-      searchString: null == searchString
-          ? _value.searchString
-          : searchString // ignore: cast_nullable_to_non_nullable
-              as String,
       showList: null == showList
           ? _value.showList
           : showList // ignore: cast_nullable_to_non_nullable
@@ -1329,7 +1109,6 @@ class _$LoadedImpl implements _Loaded {
       required this.page,
       required this.allPagesLoaded,
       required this.filterInfo,
-      required this.searchString,
       required this.showList,
       required this.totalCount})
       : _characters = characters;
@@ -1351,15 +1130,13 @@ class _$LoadedImpl implements _Loaded {
   @override
   final FilterInfo filterInfo;
   @override
-  final String searchString;
-  @override
   final bool showList;
   @override
   final int totalCount;
 
   @override
   String toString() {
-    return 'CharactersState.loaded(characters: $characters, pageLoading: $pageLoading, page: $page, allPagesLoaded: $allPagesLoaded, filterInfo: $filterInfo, searchString: $searchString, showList: $showList, totalCount: $totalCount)';
+    return 'CharactersState.loaded(characters: $characters, pageLoading: $pageLoading, page: $page, allPagesLoaded: $allPagesLoaded, filterInfo: $filterInfo, showList: $showList, totalCount: $totalCount)';
   }
 
   @override
@@ -1376,8 +1153,6 @@ class _$LoadedImpl implements _Loaded {
                 other.allPagesLoaded == allPagesLoaded) &&
             (identical(other.filterInfo, filterInfo) ||
                 other.filterInfo == filterInfo) &&
-            (identical(other.searchString, searchString) ||
-                other.searchString == searchString) &&
             (identical(other.showList, showList) ||
                 other.showList == showList) &&
             (identical(other.totalCount, totalCount) ||
@@ -1392,7 +1167,6 @@ class _$LoadedImpl implements _Loaded {
       page,
       allPagesLoaded,
       filterInfo,
-      searchString,
       showList,
       totalCount);
 
@@ -1408,55 +1182,51 @@ class _$LoadedImpl implements _Loaded {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(FilterInfo filterInfo, String searchString)
-        loading,
+    required TResult Function(FilterInfo filterInfo) loading,
     required TResult Function(
             List<Character> characters,
             bool pageLoading,
             int page,
             bool allPagesLoaded,
             FilterInfo filterInfo,
-            String searchString,
             bool showList,
             int totalCount)
         loaded,
   }) {
     return loaded(characters, pageLoading, page, allPagesLoaded, filterInfo,
-        searchString, showList, totalCount);
+        showList, totalCount);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(FilterInfo filterInfo, String searchString)? loading,
+    TResult? Function(FilterInfo filterInfo)? loading,
     TResult? Function(
             List<Character> characters,
             bool pageLoading,
             int page,
             bool allPagesLoaded,
             FilterInfo filterInfo,
-            String searchString,
             bool showList,
             int totalCount)?
         loaded,
   }) {
     return loaded?.call(characters, pageLoading, page, allPagesLoaded,
-        filterInfo, searchString, showList, totalCount);
+        filterInfo, showList, totalCount);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(FilterInfo filterInfo, String searchString)? loading,
+    TResult Function(FilterInfo filterInfo)? loading,
     TResult Function(
             List<Character> characters,
             bool pageLoading,
             int page,
             bool allPagesLoaded,
             FilterInfo filterInfo,
-            String searchString,
             bool showList,
             int totalCount)?
         loaded,
@@ -1464,7 +1234,7 @@ class _$LoadedImpl implements _Loaded {
   }) {
     if (loaded != null) {
       return loaded(characters, pageLoading, page, allPagesLoaded, filterInfo,
-          searchString, showList, totalCount);
+          showList, totalCount);
     }
     return orElse();
   }
@@ -1511,7 +1281,6 @@ abstract class _Loaded implements CharactersState {
       required final int page,
       required final bool allPagesLoaded,
       required final FilterInfo filterInfo,
-      required final String searchString,
       required final bool showList,
       required final int totalCount}) = _$LoadedImpl;
 
@@ -1520,7 +1289,6 @@ abstract class _Loaded implements CharactersState {
   int get page;
   bool get allPagesLoaded;
   FilterInfo get filterInfo;
-  String get searchString;
   bool get showList;
   int get totalCount;
 

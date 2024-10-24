@@ -16,4 +16,11 @@ class FilterInfo with _$FilterInfo {
 
   bool get filterNotEmpty =>
       status != null || species != null || type != null || gender != null;
+
+  factory FilterInfo.empty() => FilterInfo(
+        status: null,
+        species: null,
+        type: null,
+        gender: null,
+      );
 }

@@ -6,8 +6,5 @@ class EpisodesEvent with _$EpisodesEvent {
   const factory EpisodesEvent.seasonChanged({
     required int selectedSeason,
   }) = _SeasonChanged;
-  const factory EpisodesEvent.searchStringChanged({
-    required String searchString,
-  }) = _SearchStringChanged;
   const factory EpisodesEvent.nextPageLoaded() = _NextPageLoaded;
 }

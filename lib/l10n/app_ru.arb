@@ -25,5 +25,10 @@
   "origin": "Место рождения",
   "location": "Местоположение",
   "allEpisodes": "Все эпизоды",
-  "premier": "Премьера"
+  "premier": "Премьера",
+  "searchEpisode": "Найти эпизод",
+  "searchLocation": "Найти локацию",
+  "totalLocations": "Всего локаций: ",
+  "foundLocations": "Найдено локаций: ",
+  "searchResults": "РЕЗУЛЬТАТЫ ПОИСКА"
 }

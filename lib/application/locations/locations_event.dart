@@ -7,7 +7,4 @@ class LocationsEvent with _$LocationsEvent {
   const factory LocationsEvent.filterChanged({
     required LocationFilterInfo filterInfo,
   }) = _FilterChanged;
-  const factory LocationsEvent.searchStringChanged({
-    required String searchString,
-  }) = _SearchStringChanged;
 }

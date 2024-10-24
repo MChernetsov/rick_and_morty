@@ -21,7 +21,6 @@ mixin _$LocationsEvent {
     required TResult Function() started,
     required TResult Function() nextPageLoaded,
     required TResult Function(LocationFilterInfo filterInfo) filterChanged,
-    required TResult Function(String searchString) searchStringChanged,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -29,7 +28,6 @@ mixin _$LocationsEvent {
     TResult? Function()? started,
     TResult? Function()? nextPageLoaded,
     TResult? Function(LocationFilterInfo filterInfo)? filterChanged,
-    TResult? Function(String searchString)? searchStringChanged,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -37,7 +35,6 @@ mixin _$LocationsEvent {
     TResult Function()? started,
     TResult Function()? nextPageLoaded,
     TResult Function(LocationFilterInfo filterInfo)? filterChanged,
-    TResult Function(String searchString)? searchStringChanged,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -46,7 +43,6 @@ mixin _$LocationsEvent {
     required TResult Function(_Started value) started,
     required TResult Function(_NextPageLoaded value) nextPageLoaded,
     required TResult Function(_FilterChanged value) filterChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -54,7 +50,6 @@ mixin _$LocationsEvent {
     TResult? Function(_Started value)? started,
     TResult? Function(_NextPageLoaded value)? nextPageLoaded,
     TResult? Function(_FilterChanged value)? filterChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -62,7 +57,6 @@ mixin _$LocationsEvent {
     TResult Function(_Started value)? started,
     TResult Function(_NextPageLoaded value)? nextPageLoaded,
     TResult Function(_FilterChanged value)? filterChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -133,7 +127,6 @@ class _$StartedImpl implements _Started {
     required TResult Function() started,
     required TResult Function() nextPageLoaded,
     required TResult Function(LocationFilterInfo filterInfo) filterChanged,
-    required TResult Function(String searchString) searchStringChanged,
   }) {
     return started();
   }
@@ -144,7 +137,6 @@ class _$StartedImpl implements _Started {
     TResult? Function()? started,
     TResult? Function()? nextPageLoaded,
     TResult? Function(LocationFilterInfo filterInfo)? filterChanged,
-    TResult? Function(String searchString)? searchStringChanged,
   }) {
     return started?.call();
   }
@@ -155,7 +147,6 @@ class _$StartedImpl implements _Started {
     TResult Function()? started,
     TResult Function()? nextPageLoaded,
     TResult Function(LocationFilterInfo filterInfo)? filterChanged,
-    TResult Function(String searchString)? searchStringChanged,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -170,7 +161,6 @@ class _$StartedImpl implements _Started {
     required TResult Function(_Started value) started,
     required TResult Function(_NextPageLoaded value) nextPageLoaded,
     required TResult Function(_FilterChanged value) filterChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
   }) {
     return started(this);
   }
@@ -181,7 +171,6 @@ class _$StartedImpl implements _Started {
     TResult? Function(_Started value)? started,
     TResult? Function(_NextPageLoaded value)? nextPageLoaded,
     TResult? Function(_FilterChanged value)? filterChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
   }) {
     return started?.call(this);
   }
@@ -192,7 +181,6 @@ class _$StartedImpl implements _Started {
     TResult Function(_Started value)? started,
     TResult Function(_NextPageLoaded value)? nextPageLoaded,
     TResult Function(_FilterChanged value)? filterChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -250,7 +238,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
     required TResult Function() started,
     required TResult Function() nextPageLoaded,
     required TResult Function(LocationFilterInfo filterInfo) filterChanged,
-    required TResult Function(String searchString) searchStringChanged,
   }) {
     return nextPageLoaded();
   }
@@ -261,7 +248,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
     TResult? Function()? started,
     TResult? Function()? nextPageLoaded,
     TResult? Function(LocationFilterInfo filterInfo)? filterChanged,
-    TResult? Function(String searchString)? searchStringChanged,
   }) {
     return nextPageLoaded?.call();
   }
@@ -272,7 +258,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
     TResult Function()? started,
     TResult Function()? nextPageLoaded,
     TResult Function(LocationFilterInfo filterInfo)? filterChanged,
-    TResult Function(String searchString)? searchStringChanged,
     required TResult orElse(),
   }) {
     if (nextPageLoaded != null) {
@@ -287,7 +272,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
     required TResult Function(_Started value) started,
     required TResult Function(_NextPageLoaded value) nextPageLoaded,
     required TResult Function(_FilterChanged value) filterChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
   }) {
     return nextPageLoaded(this);
   }
@@ -298,7 +282,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
     TResult? Function(_Started value)? started,
     TResult? Function(_NextPageLoaded value)? nextPageLoaded,
     TResult? Function(_FilterChanged value)? filterChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
   }) {
     return nextPageLoaded?.call(this);
   }
@@ -309,7 +292,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
     TResult Function(_Started value)? started,
     TResult Function(_NextPageLoaded value)? nextPageLoaded,
     TResult Function(_FilterChanged value)? filterChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
     required TResult orElse(),
   }) {
     if (nextPageLoaded != null) {
@@ -407,7 +389,6 @@ class _$FilterChangedImpl implements _FilterChanged {
     required TResult Function() started,
     required TResult Function() nextPageLoaded,
     required TResult Function(LocationFilterInfo filterInfo) filterChanged,
-    required TResult Function(String searchString) searchStringChanged,
   }) {
     return filterChanged(filterInfo);
   }
@@ -418,7 +399,6 @@ class _$FilterChangedImpl implements _FilterChanged {
     TResult? Function()? started,
     TResult? Function()? nextPageLoaded,
     TResult? Function(LocationFilterInfo filterInfo)? filterChanged,
-    TResult? Function(String searchString)? searchStringChanged,
   }) {
     return filterChanged?.call(filterInfo);
   }
@@ -429,7 +409,6 @@ class _$FilterChangedImpl implements _FilterChanged {
     TResult Function()? started,
     TResult Function()? nextPageLoaded,
     TResult Function(LocationFilterInfo filterInfo)? filterChanged,
-    TResult Function(String searchString)? searchStringChanged,
     required TResult orElse(),
   }) {
     if (filterChanged != null) {
@@ -444,7 +423,6 @@ class _$FilterChangedImpl implements _FilterChanged {
     required TResult Function(_Started value) started,
     required TResult Function(_NextPageLoaded value) nextPageLoaded,
     required TResult Function(_FilterChanged value) filterChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
   }) {
     return filterChanged(this);
   }
@@ -455,7 +433,6 @@ class _$FilterChangedImpl implements _FilterChanged {
     TResult? Function(_Started value)? started,
     TResult? Function(_NextPageLoaded value)? nextPageLoaded,
     TResult? Function(_FilterChanged value)? filterChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
   }) {
     return filterChanged?.call(this);
   }
@@ -466,7 +443,6 @@ class _$FilterChangedImpl implements _FilterChanged {
     TResult Function(_Started value)? started,
     TResult Function(_NextPageLoaded value)? nextPageLoaded,
     TResult Function(_FilterChanged value)? filterChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
     required TResult orElse(),
   }) {
     if (filterChanged != null) {
@@ -490,172 +466,14 @@ abstract class _FilterChanged implements LocationsEvent {
 }
 
 /// @nodoc
-abstract class _$$SearchStringChangedImplCopyWith<$Res> {
-  factory _$$SearchStringChangedImplCopyWith(_$SearchStringChangedImpl value,
-          $Res Function(_$SearchStringChangedImpl) then) =
-      __$$SearchStringChangedImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String searchString});
-}
-
-/// @nodoc
-class __$$SearchStringChangedImplCopyWithImpl<$Res>
-    extends _$LocationsEventCopyWithImpl<$Res, _$SearchStringChangedImpl>
-    implements _$$SearchStringChangedImplCopyWith<$Res> {
-  __$$SearchStringChangedImplCopyWithImpl(_$SearchStringChangedImpl _value,
-      $Res Function(_$SearchStringChangedImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of LocationsEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? searchString = null,
-  }) {
-    return _then(_$SearchStringChangedImpl(
-      searchString: null == searchString
-          ? _value.searchString
-          : searchString // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$SearchStringChangedImpl implements _SearchStringChanged {
-  const _$SearchStringChangedImpl({required this.searchString});
-
-  @override
-  final String searchString;
-
-  @override
-  String toString() {
-    return 'LocationsEvent.searchStringChanged(searchString: $searchString)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SearchStringChangedImpl &&
-            (identical(other.searchString, searchString) ||
-                other.searchString == searchString));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, searchString);
-
-  /// Create a copy of LocationsEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SearchStringChangedImplCopyWith<_$SearchStringChangedImpl> get copyWith =>
-      __$$SearchStringChangedImplCopyWithImpl<_$SearchStringChangedImpl>(
-          this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() started,
-    required TResult Function() nextPageLoaded,
-    required TResult Function(LocationFilterInfo filterInfo) filterChanged,
-    required TResult Function(String searchString) searchStringChanged,
-  }) {
-    return searchStringChanged(searchString);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? started,
-    TResult? Function()? nextPageLoaded,
-    TResult? Function(LocationFilterInfo filterInfo)? filterChanged,
-    TResult? Function(String searchString)? searchStringChanged,
-  }) {
-    return searchStringChanged?.call(searchString);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function()? nextPageLoaded,
-    TResult Function(LocationFilterInfo filterInfo)? filterChanged,
-    TResult Function(String searchString)? searchStringChanged,
-    required TResult orElse(),
-  }) {
-    if (searchStringChanged != null) {
-      return searchStringChanged(searchString);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Started value) started,
-    required TResult Function(_NextPageLoaded value) nextPageLoaded,
-    required TResult Function(_FilterChanged value) filterChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
-  }) {
-    return searchStringChanged(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Started value)? started,
-    TResult? Function(_NextPageLoaded value)? nextPageLoaded,
-    TResult? Function(_FilterChanged value)? filterChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
-  }) {
-    return searchStringChanged?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_NextPageLoaded value)? nextPageLoaded,
-    TResult Function(_FilterChanged value)? filterChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
-    required TResult orElse(),
-  }) {
-    if (searchStringChanged != null) {
-      return searchStringChanged(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _SearchStringChanged implements LocationsEvent {
-  const factory _SearchStringChanged({required final String searchString}) =
-      _$SearchStringChangedImpl;
-
-  String get searchString;
-
-  /// Create a copy of LocationsEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SearchStringChangedImplCopyWith<_$SearchStringChangedImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
 mixin _$LocationsState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(
-            LocationFilterInfo filterInfo, String searchString)
-        loading,
+    required TResult Function(LocationFilterInfo filterInfo) loading,
     required TResult Function(
             List<Location> locations,
             LocationFilterInfo filterInfo,
-            String searchString,
             int totalCount,
             bool pageLoading,
             int page,
@@ -666,32 +484,18 @@ mixin _$LocationsState {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(LocationFilterInfo filterInfo, String searchString)?
-        loading,
-    TResult? Function(
-            List<Location> locations,
-            LocationFilterInfo filterInfo,
-            String searchString,
-            int totalCount,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult? Function(LocationFilterInfo filterInfo)? loading,
+    TResult? Function(List<Location> locations, LocationFilterInfo filterInfo,
+            int totalCount, bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(LocationFilterInfo filterInfo, String searchString)?
-        loading,
-    TResult Function(
-            List<Location> locations,
-            LocationFilterInfo filterInfo,
-            String searchString,
-            int totalCount,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult Function(LocationFilterInfo filterInfo)? loading,
+    TResult Function(List<Location> locations, LocationFilterInfo filterInfo,
+            int totalCount, bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
     required TResult orElse(),
   }) =>
@@ -783,13 +587,10 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(
-            LocationFilterInfo filterInfo, String searchString)
-        loading,
+    required TResult Function(LocationFilterInfo filterInfo) loading,
     required TResult Function(
             List<Location> locations,
             LocationFilterInfo filterInfo,
-            String searchString,
             int totalCount,
             bool pageLoading,
             int page,
@@ -803,16 +604,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(LocationFilterInfo filterInfo, String searchString)?
-        loading,
-    TResult? Function(
-            List<Location> locations,
-            LocationFilterInfo filterInfo,
-            String searchString,
-            int totalCount,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult? Function(LocationFilterInfo filterInfo)? loading,
+    TResult? Function(List<Location> locations, LocationFilterInfo filterInfo,
+            int totalCount, bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
   }) {
     return initial?.call();
@@ -822,16 +616,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(LocationFilterInfo filterInfo, String searchString)?
-        loading,
-    TResult Function(
-            List<Location> locations,
-            LocationFilterInfo filterInfo,
-            String searchString,
-            int totalCount,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult Function(LocationFilterInfo filterInfo)? loading,
+    TResult Function(List<Location> locations, LocationFilterInfo filterInfo,
+            int totalCount, bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
     required TResult orElse(),
   }) {
@@ -886,7 +673,7 @@ abstract class _$$LoadingImplCopyWith<$Res> {
           _$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
       __$$LoadingImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({LocationFilterInfo filterInfo, String searchString});
+  $Res call({LocationFilterInfo filterInfo});
 
   $LocationFilterInfoCopyWith<$Res> get filterInfo;
 }
@@ -905,17 +692,12 @@ class __$$LoadingImplCopyWithImpl<$Res>
   @override
   $Res call({
     Object? filterInfo = null,
-    Object? searchString = null,
   }) {
     return _then(_$LoadingImpl(
       filterInfo: null == filterInfo
           ? _value.filterInfo
           : filterInfo // ignore: cast_nullable_to_non_nullable
               as LocationFilterInfo,
-      searchString: null == searchString
-          ? _value.searchString
-          : searchString // ignore: cast_nullable_to_non_nullable
-              as String,
     ));
   }
 
@@ -933,16 +715,14 @@ class __$$LoadingImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$LoadingImpl implements _Loading {
-  const _$LoadingImpl({required this.filterInfo, required this.searchString});
+  const _$LoadingImpl({required this.filterInfo});
 
   @override
   final LocationFilterInfo filterInfo;
-  @override
-  final String searchString;
 
   @override
   String toString() {
-    return 'LocationsState.loading(filterInfo: $filterInfo, searchString: $searchString)';
+    return 'LocationsState.loading(filterInfo: $filterInfo)';
   }
 
   @override
@@ -951,13 +731,11 @@ class _$LoadingImpl implements _Loading {
         (other.runtimeType == runtimeType &&
             other is _$LoadingImpl &&
             (identical(other.filterInfo, filterInfo) ||
-                other.filterInfo == filterInfo) &&
-            (identical(other.searchString, searchString) ||
-                other.searchString == searchString));
+                other.filterInfo == filterInfo));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, filterInfo, searchString);
+  int get hashCode => Object.hash(runtimeType, filterInfo);
 
   /// Create a copy of LocationsState
   /// with the given fields replaced by the non-null parameter values.
@@ -971,60 +749,43 @@ class _$LoadingImpl implements _Loading {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(
-            LocationFilterInfo filterInfo, String searchString)
-        loading,
+    required TResult Function(LocationFilterInfo filterInfo) loading,
     required TResult Function(
             List<Location> locations,
             LocationFilterInfo filterInfo,
-            String searchString,
             int totalCount,
             bool pageLoading,
             int page,
             bool allPagesLoaded)
         loaded,
   }) {
-    return loading(filterInfo, searchString);
+    return loading(filterInfo);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(LocationFilterInfo filterInfo, String searchString)?
-        loading,
-    TResult? Function(
-            List<Location> locations,
-            LocationFilterInfo filterInfo,
-            String searchString,
-            int totalCount,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult? Function(LocationFilterInfo filterInfo)? loading,
+    TResult? Function(List<Location> locations, LocationFilterInfo filterInfo,
+            int totalCount, bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
   }) {
-    return loading?.call(filterInfo, searchString);
+    return loading?.call(filterInfo);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(LocationFilterInfo filterInfo, String searchString)?
-        loading,
-    TResult Function(
-            List<Location> locations,
-            LocationFilterInfo filterInfo,
-            String searchString,
-            int totalCount,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult Function(LocationFilterInfo filterInfo)? loading,
+    TResult Function(List<Location> locations, LocationFilterInfo filterInfo,
+            int totalCount, bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
     required TResult orElse(),
   }) {
     if (loading != null) {
-      return loading(filterInfo, searchString);
+      return loading(filterInfo);
     }
     return orElse();
   }
@@ -1065,12 +826,10 @@ class _$LoadingImpl implements _Loading {
 }
 
 abstract class _Loading implements LocationsState {
-  const factory _Loading(
-      {required final LocationFilterInfo filterInfo,
-      required final String searchString}) = _$LoadingImpl;
+  const factory _Loading({required final LocationFilterInfo filterInfo}) =
+      _$LoadingImpl;
 
   LocationFilterInfo get filterInfo;
-  String get searchString;
 
   /// Create a copy of LocationsState
   /// with the given fields replaced by the non-null parameter values.
@@ -1088,7 +847,6 @@ abstract class _$$LoadedImplCopyWith<$Res> {
   $Res call(
       {List<Location> locations,
       LocationFilterInfo filterInfo,
-      String searchString,
       int totalCount,
       bool pageLoading,
       int page,
@@ -1112,7 +870,6 @@ class __$$LoadedImplCopyWithImpl<$Res>
   $Res call({
     Object? locations = null,
     Object? filterInfo = null,
-    Object? searchString = null,
     Object? totalCount = null,
     Object? pageLoading = null,
     Object? page = null,
@@ -1127,10 +884,6 @@ class __$$LoadedImplCopyWithImpl<$Res>
           ? _value.filterInfo
           : filterInfo // ignore: cast_nullable_to_non_nullable
               as LocationFilterInfo,
-      searchString: null == searchString
-          ? _value.searchString
-          : searchString // ignore: cast_nullable_to_non_nullable
-              as String,
       totalCount: null == totalCount
           ? _value.totalCount
           : totalCount // ignore: cast_nullable_to_non_nullable
@@ -1167,7 +920,6 @@ class _$LoadedImpl implements _Loaded {
   const _$LoadedImpl(
       {required final List<Location> locations,
       required this.filterInfo,
-      required this.searchString,
       required this.totalCount,
       required this.pageLoading,
       required this.page,
@@ -1185,8 +937,6 @@ class _$LoadedImpl implements _Loaded {
   @override
   final LocationFilterInfo filterInfo;
   @override
-  final String searchString;
-  @override
   final int totalCount;
   @override
   final bool pageLoading;
@@ -1197,7 +947,7 @@ class _$LoadedImpl implements _Loaded {
 
   @override
   String toString() {
-    return 'LocationsState.loaded(locations: $locations, filterInfo: $filterInfo, searchString: $searchString, totalCount: $totalCount, pageLoading: $pageLoading, page: $page, allPagesLoaded: $allPagesLoaded)';
+    return 'LocationsState.loaded(locations: $locations, filterInfo: $filterInfo, totalCount: $totalCount, pageLoading: $pageLoading, page: $page, allPagesLoaded: $allPagesLoaded)';
   }
 
   @override
@@ -1209,8 +959,6 @@ class _$LoadedImpl implements _Loaded {
                 .equals(other._locations, _locations) &&
             (identical(other.filterInfo, filterInfo) ||
                 other.filterInfo == filterInfo) &&
-            (identical(other.searchString, searchString) ||
-                other.searchString == searchString) &&
             (identical(other.totalCount, totalCount) ||
                 other.totalCount == totalCount) &&
             (identical(other.pageLoading, pageLoading) ||
@@ -1225,7 +973,6 @@ class _$LoadedImpl implements _Loaded {
       runtimeType,
       const DeepCollectionEquality().hash(_locations),
       filterInfo,
-      searchString,
       totalCount,
       pageLoading,
       page,
@@ -1243,63 +990,46 @@ class _$LoadedImpl implements _Loaded {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(
-            LocationFilterInfo filterInfo, String searchString)
-        loading,
+    required TResult Function(LocationFilterInfo filterInfo) loading,
     required TResult Function(
             List<Location> locations,
             LocationFilterInfo filterInfo,
-            String searchString,
             int totalCount,
             bool pageLoading,
             int page,
             bool allPagesLoaded)
         loaded,
   }) {
-    return loaded(locations, filterInfo, searchString, totalCount, pageLoading,
-        page, allPagesLoaded);
+    return loaded(
+        locations, filterInfo, totalCount, pageLoading, page, allPagesLoaded);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(LocationFilterInfo filterInfo, String searchString)?
-        loading,
-    TResult? Function(
-            List<Location> locations,
-            LocationFilterInfo filterInfo,
-            String searchString,
-            int totalCount,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult? Function(LocationFilterInfo filterInfo)? loading,
+    TResult? Function(List<Location> locations, LocationFilterInfo filterInfo,
+            int totalCount, bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
   }) {
-    return loaded?.call(locations, filterInfo, searchString, totalCount,
-        pageLoading, page, allPagesLoaded);
+    return loaded?.call(
+        locations, filterInfo, totalCount, pageLoading, page, allPagesLoaded);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(LocationFilterInfo filterInfo, String searchString)?
-        loading,
-    TResult Function(
-            List<Location> locations,
-            LocationFilterInfo filterInfo,
-            String searchString,
-            int totalCount,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult Function(LocationFilterInfo filterInfo)? loading,
+    TResult Function(List<Location> locations, LocationFilterInfo filterInfo,
+            int totalCount, bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
     required TResult orElse(),
   }) {
     if (loaded != null) {
-      return loaded(locations, filterInfo, searchString, totalCount,
-          pageLoading, page, allPagesLoaded);
+      return loaded(
+          locations, filterInfo, totalCount, pageLoading, page, allPagesLoaded);
     }
     return orElse();
   }
@@ -1343,7 +1073,6 @@ abstract class _Loaded implements LocationsState {
   const factory _Loaded(
       {required final List<Location> locations,
       required final LocationFilterInfo filterInfo,
-      required final String searchString,
       required final int totalCount,
       required final bool pageLoading,
       required final int page,
@@ -1351,7 +1080,6 @@ abstract class _Loaded implements LocationsState {
 
   List<Location> get locations;
   LocationFilterInfo get filterInfo;
-  String get searchString;
   int get totalCount;
   bool get pageLoading;
   int get page;

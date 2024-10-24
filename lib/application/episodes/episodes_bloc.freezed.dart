@@ -20,7 +20,6 @@ mixin _$EpisodesEvent {
   TResult when<TResult extends Object?>({
     required TResult Function() started,
     required TResult Function(int selectedSeason) seasonChanged,
-    required TResult Function(String searchString) searchStringChanged,
     required TResult Function() nextPageLoaded,
   }) =>
       throw _privateConstructorUsedError;
@@ -28,7 +27,6 @@ mixin _$EpisodesEvent {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
     TResult? Function(int selectedSeason)? seasonChanged,
-    TResult? Function(String searchString)? searchStringChanged,
     TResult? Function()? nextPageLoaded,
   }) =>
       throw _privateConstructorUsedError;
@@ -36,7 +34,6 @@ mixin _$EpisodesEvent {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
     TResult Function(int selectedSeason)? seasonChanged,
-    TResult Function(String searchString)? searchStringChanged,
     TResult Function()? nextPageLoaded,
     required TResult orElse(),
   }) =>
@@ -45,7 +42,6 @@ mixin _$EpisodesEvent {
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
     required TResult Function(_SeasonChanged value) seasonChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
     required TResult Function(_NextPageLoaded value) nextPageLoaded,
   }) =>
       throw _privateConstructorUsedError;
@@ -53,7 +49,6 @@ mixin _$EpisodesEvent {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
     TResult? Function(_SeasonChanged value)? seasonChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
     TResult? Function(_NextPageLoaded value)? nextPageLoaded,
   }) =>
       throw _privateConstructorUsedError;
@@ -61,7 +56,6 @@ mixin _$EpisodesEvent {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
     TResult Function(_SeasonChanged value)? seasonChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
     TResult Function(_NextPageLoaded value)? nextPageLoaded,
     required TResult orElse(),
   }) =>
@@ -132,7 +126,6 @@ class _$StartedImpl implements _Started {
   TResult when<TResult extends Object?>({
     required TResult Function() started,
     required TResult Function(int selectedSeason) seasonChanged,
-    required TResult Function(String searchString) searchStringChanged,
     required TResult Function() nextPageLoaded,
   }) {
     return started();
@@ -143,7 +136,6 @@ class _$StartedImpl implements _Started {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
     TResult? Function(int selectedSeason)? seasonChanged,
-    TResult? Function(String searchString)? searchStringChanged,
     TResult? Function()? nextPageLoaded,
   }) {
     return started?.call();
@@ -154,7 +146,6 @@ class _$StartedImpl implements _Started {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
     TResult Function(int selectedSeason)? seasonChanged,
-    TResult Function(String searchString)? searchStringChanged,
     TResult Function()? nextPageLoaded,
     required TResult orElse(),
   }) {
@@ -169,7 +160,6 @@ class _$StartedImpl implements _Started {
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
     required TResult Function(_SeasonChanged value) seasonChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
     required TResult Function(_NextPageLoaded value) nextPageLoaded,
   }) {
     return started(this);
@@ -180,7 +170,6 @@ class _$StartedImpl implements _Started {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
     TResult? Function(_SeasonChanged value)? seasonChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
     TResult? Function(_NextPageLoaded value)? nextPageLoaded,
   }) {
     return started?.call(this);
@@ -191,7 +180,6 @@ class _$StartedImpl implements _Started {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
     TResult Function(_SeasonChanged value)? seasonChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
     TResult Function(_NextPageLoaded value)? nextPageLoaded,
     required TResult orElse(),
   }) {
@@ -277,7 +265,6 @@ class _$SeasonChangedImpl implements _SeasonChanged {
   TResult when<TResult extends Object?>({
     required TResult Function() started,
     required TResult Function(int selectedSeason) seasonChanged,
-    required TResult Function(String searchString) searchStringChanged,
     required TResult Function() nextPageLoaded,
   }) {
     return seasonChanged(selectedSeason);
@@ -288,7 +275,6 @@ class _$SeasonChangedImpl implements _SeasonChanged {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
     TResult? Function(int selectedSeason)? seasonChanged,
-    TResult? Function(String searchString)? searchStringChanged,
     TResult? Function()? nextPageLoaded,
   }) {
     return seasonChanged?.call(selectedSeason);
@@ -299,7 +285,6 @@ class _$SeasonChangedImpl implements _SeasonChanged {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
     TResult Function(int selectedSeason)? seasonChanged,
-    TResult Function(String searchString)? searchStringChanged,
     TResult Function()? nextPageLoaded,
     required TResult orElse(),
   }) {
@@ -314,7 +299,6 @@ class _$SeasonChangedImpl implements _SeasonChanged {
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
     required TResult Function(_SeasonChanged value) seasonChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
     required TResult Function(_NextPageLoaded value) nextPageLoaded,
   }) {
     return seasonChanged(this);
@@ -325,7 +309,6 @@ class _$SeasonChangedImpl implements _SeasonChanged {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
     TResult? Function(_SeasonChanged value)? seasonChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
     TResult? Function(_NextPageLoaded value)? nextPageLoaded,
   }) {
     return seasonChanged?.call(this);
@@ -336,7 +319,6 @@ class _$SeasonChangedImpl implements _SeasonChanged {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
     TResult Function(_SeasonChanged value)? seasonChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
     TResult Function(_NextPageLoaded value)? nextPageLoaded,
     required TResult orElse(),
   }) {
@@ -357,161 +339,6 @@ abstract class _SeasonChanged implements EpisodesEvent {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SeasonChangedImplCopyWith<_$SeasonChangedImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$SearchStringChangedImplCopyWith<$Res> {
-  factory _$$SearchStringChangedImplCopyWith(_$SearchStringChangedImpl value,
-          $Res Function(_$SearchStringChangedImpl) then) =
-      __$$SearchStringChangedImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String searchString});
-}
-
-/// @nodoc
-class __$$SearchStringChangedImplCopyWithImpl<$Res>
-    extends _$EpisodesEventCopyWithImpl<$Res, _$SearchStringChangedImpl>
-    implements _$$SearchStringChangedImplCopyWith<$Res> {
-  __$$SearchStringChangedImplCopyWithImpl(_$SearchStringChangedImpl _value,
-      $Res Function(_$SearchStringChangedImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of EpisodesEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? searchString = null,
-  }) {
-    return _then(_$SearchStringChangedImpl(
-      searchString: null == searchString
-          ? _value.searchString
-          : searchString // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$SearchStringChangedImpl implements _SearchStringChanged {
-  const _$SearchStringChangedImpl({required this.searchString});
-
-  @override
-  final String searchString;
-
-  @override
-  String toString() {
-    return 'EpisodesEvent.searchStringChanged(searchString: $searchString)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SearchStringChangedImpl &&
-            (identical(other.searchString, searchString) ||
-                other.searchString == searchString));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, searchString);
-
-  /// Create a copy of EpisodesEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SearchStringChangedImplCopyWith<_$SearchStringChangedImpl> get copyWith =>
-      __$$SearchStringChangedImplCopyWithImpl<_$SearchStringChangedImpl>(
-          this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() started,
-    required TResult Function(int selectedSeason) seasonChanged,
-    required TResult Function(String searchString) searchStringChanged,
-    required TResult Function() nextPageLoaded,
-  }) {
-    return searchStringChanged(searchString);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? started,
-    TResult? Function(int selectedSeason)? seasonChanged,
-    TResult? Function(String searchString)? searchStringChanged,
-    TResult? Function()? nextPageLoaded,
-  }) {
-    return searchStringChanged?.call(searchString);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? started,
-    TResult Function(int selectedSeason)? seasonChanged,
-    TResult Function(String searchString)? searchStringChanged,
-    TResult Function()? nextPageLoaded,
-    required TResult orElse(),
-  }) {
-    if (searchStringChanged != null) {
-      return searchStringChanged(searchString);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Started value) started,
-    required TResult Function(_SeasonChanged value) seasonChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
-    required TResult Function(_NextPageLoaded value) nextPageLoaded,
-  }) {
-    return searchStringChanged(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Started value)? started,
-    TResult? Function(_SeasonChanged value)? seasonChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
-    TResult? Function(_NextPageLoaded value)? nextPageLoaded,
-  }) {
-    return searchStringChanged?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Started value)? started,
-    TResult Function(_SeasonChanged value)? seasonChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
-    TResult Function(_NextPageLoaded value)? nextPageLoaded,
-    required TResult orElse(),
-  }) {
-    if (searchStringChanged != null) {
-      return searchStringChanged(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _SearchStringChanged implements EpisodesEvent {
-  const factory _SearchStringChanged({required final String searchString}) =
-      _$SearchStringChangedImpl;
-
-  String get searchString;
-
-  /// Create a copy of EpisodesEvent
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$SearchStringChangedImplCopyWith<_$SearchStringChangedImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -558,7 +385,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
   TResult when<TResult extends Object?>({
     required TResult Function() started,
     required TResult Function(int selectedSeason) seasonChanged,
-    required TResult Function(String searchString) searchStringChanged,
     required TResult Function() nextPageLoaded,
   }) {
     return nextPageLoaded();
@@ -569,7 +395,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
     TResult? Function(int selectedSeason)? seasonChanged,
-    TResult? Function(String searchString)? searchStringChanged,
     TResult? Function()? nextPageLoaded,
   }) {
     return nextPageLoaded?.call();
@@ -580,7 +405,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
     TResult Function(int selectedSeason)? seasonChanged,
-    TResult Function(String searchString)? searchStringChanged,
     TResult Function()? nextPageLoaded,
     required TResult orElse(),
   }) {
@@ -595,7 +419,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
     required TResult Function(_SeasonChanged value) seasonChanged,
-    required TResult Function(_SearchStringChanged value) searchStringChanged,
     required TResult Function(_NextPageLoaded value) nextPageLoaded,
   }) {
     return nextPageLoaded(this);
@@ -606,7 +429,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
     TResult? Function(_SeasonChanged value)? seasonChanged,
-    TResult? Function(_SearchStringChanged value)? searchStringChanged,
     TResult? Function(_NextPageLoaded value)? nextPageLoaded,
   }) {
     return nextPageLoaded?.call(this);
@@ -617,7 +439,6 @@ class _$NextPageLoadedImpl implements _NextPageLoaded {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
     TResult Function(_SeasonChanged value)? seasonChanged,
-    TResult Function(_SearchStringChanged value)? searchStringChanged,
     TResult Function(_NextPageLoaded value)? nextPageLoaded,
     required TResult orElse(),
   }) {
@@ -637,42 +458,27 @@ mixin _$EpisodesState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(String searchString, int selectedSeason) loading,
-    required TResult Function(
-            String searchString,
-            int selectedSeason,
-            List<Episode> episodes,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)
+    required TResult Function(int selectedSeason) loading,
+    required TResult Function(int selectedSeason, List<Episode> episodes,
+            bool pageLoading, int page, bool allPagesLoaded)
         loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(String searchString, int selectedSeason)? loading,
-    TResult? Function(
-            String searchString,
-            int selectedSeason,
-            List<Episode> episodes,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult? Function(int selectedSeason)? loading,
+    TResult? Function(int selectedSeason, List<Episode> episodes,
+            bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(String searchString, int selectedSeason)? loading,
-    TResult Function(
-            String searchString,
-            int selectedSeason,
-            List<Episode> episodes,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult Function(int selectedSeason)? loading,
+    TResult Function(int selectedSeason, List<Episode> episodes,
+            bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
     required TResult orElse(),
   }) =>
@@ -764,14 +570,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(String searchString, int selectedSeason) loading,
-    required TResult Function(
-            String searchString,
-            int selectedSeason,
-            List<Episode> episodes,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)
+    required TResult Function(int selectedSeason) loading,
+    required TResult Function(int selectedSeason, List<Episode> episodes,
+            bool pageLoading, int page, bool allPagesLoaded)
         loaded,
   }) {
     return initial();
@@ -781,14 +582,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(String searchString, int selectedSeason)? loading,
-    TResult? Function(
-            String searchString,
-            int selectedSeason,
-            List<Episode> episodes,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult? Function(int selectedSeason)? loading,
+    TResult? Function(int selectedSeason, List<Episode> episodes,
+            bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
   }) {
     return initial?.call();
@@ -798,14 +594,9 @@ class _$InitialImpl implements _Initial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(String searchString, int selectedSeason)? loading,
-    TResult Function(
-            String searchString,
-            int selectedSeason,
-            List<Episode> episodes,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult Function(int selectedSeason)? loading,
+    TResult Function(int selectedSeason, List<Episode> episodes,
+            bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
     required TResult orElse(),
   }) {
@@ -860,7 +651,7 @@ abstract class _$$LoadingImplCopyWith<$Res> {
           _$LoadingImpl value, $Res Function(_$LoadingImpl) then) =
       __$$LoadingImplCopyWithImpl<$Res>;
   @useResult
-  $Res call({String searchString, int selectedSeason});
+  $Res call({int selectedSeason});
 }
 
 /// @nodoc
@@ -876,14 +667,9 @@ class __$$LoadingImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? searchString = null,
     Object? selectedSeason = null,
   }) {
     return _then(_$LoadingImpl(
-      searchString: null == searchString
-          ? _value.searchString
-          : searchString // ignore: cast_nullable_to_non_nullable
-              as String,
       selectedSeason: null == selectedSeason
           ? _value.selectedSeason
           : selectedSeason // ignore: cast_nullable_to_non_nullable
@@ -895,17 +681,14 @@ class __$$LoadingImplCopyWithImpl<$Res>
 /// @nodoc
 
 class _$LoadingImpl implements _Loading {
-  const _$LoadingImpl(
-      {required this.searchString, required this.selectedSeason});
+  const _$LoadingImpl({required this.selectedSeason});
 
-  @override
-  final String searchString;
   @override
   final int selectedSeason;
 
   @override
   String toString() {
-    return 'EpisodesState.loading(searchString: $searchString, selectedSeason: $selectedSeason)';
+    return 'EpisodesState.loading(selectedSeason: $selectedSeason)';
   }
 
   @override
@@ -913,14 +696,12 @@ class _$LoadingImpl implements _Loading {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LoadingImpl &&
-            (identical(other.searchString, searchString) ||
-                other.searchString == searchString) &&
             (identical(other.selectedSeason, selectedSeason) ||
                 other.selectedSeason == selectedSeason));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, searchString, selectedSeason);
+  int get hashCode => Object.hash(runtimeType, selectedSeason);
 
   /// Create a copy of EpisodesState
   /// with the given fields replaced by the non-null parameter values.
@@ -934,53 +715,38 @@ class _$LoadingImpl implements _Loading {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(String searchString, int selectedSeason) loading,
-    required TResult Function(
-            String searchString,
-            int selectedSeason,
-            List<Episode> episodes,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)
+    required TResult Function(int selectedSeason) loading,
+    required TResult Function(int selectedSeason, List<Episode> episodes,
+            bool pageLoading, int page, bool allPagesLoaded)
         loaded,
   }) {
-    return loading(searchString, selectedSeason);
+    return loading(selectedSeason);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(String searchString, int selectedSeason)? loading,
-    TResult? Function(
-            String searchString,
-            int selectedSeason,
-            List<Episode> episodes,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult? Function(int selectedSeason)? loading,
+    TResult? Function(int selectedSeason, List<Episode> episodes,
+            bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
   }) {
-    return loading?.call(searchString, selectedSeason);
+    return loading?.call(selectedSeason);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(String searchString, int selectedSeason)? loading,
-    TResult Function(
-            String searchString,
-            int selectedSeason,
-            List<Episode> episodes,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult Function(int selectedSeason)? loading,
+    TResult Function(int selectedSeason, List<Episode> episodes,
+            bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
     required TResult orElse(),
   }) {
     if (loading != null) {
-      return loading(searchString, selectedSeason);
+      return loading(selectedSeason);
     }
     return orElse();
   }
@@ -1021,11 +787,8 @@ class _$LoadingImpl implements _Loading {
 }
 
 abstract class _Loading implements EpisodesState {
-  const factory _Loading(
-      {required final String searchString,
-      required final int selectedSeason}) = _$LoadingImpl;
+  const factory _Loading({required final int selectedSeason}) = _$LoadingImpl;
 
-  String get searchString;
   int get selectedSeason;
 
   /// Create a copy of EpisodesState
@@ -1042,8 +805,7 @@ abstract class _$$LoadedImplCopyWith<$Res> {
       __$$LoadedImplCopyWithImpl<$Res>;
   @useResult
   $Res call(
-      {String searchString,
-      int selectedSeason,
+      {int selectedSeason,
       List<Episode> episodes,
       bool pageLoading,
       int page,
@@ -1063,7 +825,6 @@ class __$$LoadedImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? searchString = null,
     Object? selectedSeason = null,
     Object? episodes = null,
     Object? pageLoading = null,
@@ -1071,10 +832,6 @@ class __$$LoadedImplCopyWithImpl<$Res>
     Object? allPagesLoaded = null,
   }) {
     return _then(_$LoadedImpl(
-      searchString: null == searchString
-          ? _value.searchString
-          : searchString // ignore: cast_nullable_to_non_nullable
-              as String,
       selectedSeason: null == selectedSeason
           ? _value.selectedSeason
           : selectedSeason // ignore: cast_nullable_to_non_nullable
@@ -1103,16 +860,13 @@ class __$$LoadedImplCopyWithImpl<$Res>
 
 class _$LoadedImpl implements _Loaded {
   const _$LoadedImpl(
-      {required this.searchString,
-      required this.selectedSeason,
+      {required this.selectedSeason,
       required final List<Episode> episodes,
       required this.pageLoading,
       required this.page,
       required this.allPagesLoaded})
       : _episodes = episodes;
 
-  @override
-  final String searchString;
   @override
   final int selectedSeason;
   final List<Episode> _episodes;
@@ -1132,7 +886,7 @@ class _$LoadedImpl implements _Loaded {
 
   @override
   String toString() {
-    return 'EpisodesState.loaded(searchString: $searchString, selectedSeason: $selectedSeason, episodes: $episodes, pageLoading: $pageLoading, page: $page, allPagesLoaded: $allPagesLoaded)';
+    return 'EpisodesState.loaded(selectedSeason: $selectedSeason, episodes: $episodes, pageLoading: $pageLoading, page: $page, allPagesLoaded: $allPagesLoaded)';
   }
 
   @override
@@ -1140,8 +894,6 @@ class _$LoadedImpl implements _Loaded {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$LoadedImpl &&
-            (identical(other.searchString, searchString) ||
-                other.searchString == searchString) &&
             (identical(other.selectedSeason, selectedSeason) ||
                 other.selectedSeason == selectedSeason) &&
             const DeepCollectionEquality().equals(other._episodes, _episodes) &&
@@ -1155,7 +907,6 @@ class _$LoadedImpl implements _Loaded {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      searchString,
       selectedSeason,
       const DeepCollectionEquality().hash(_episodes),
       pageLoading,
@@ -1174,56 +925,40 @@ class _$LoadedImpl implements _Loaded {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function(String searchString, int selectedSeason) loading,
-    required TResult Function(
-            String searchString,
-            int selectedSeason,
-            List<Episode> episodes,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)
+    required TResult Function(int selectedSeason) loading,
+    required TResult Function(int selectedSeason, List<Episode> episodes,
+            bool pageLoading, int page, bool allPagesLoaded)
         loaded,
   }) {
-    return loaded(searchString, selectedSeason, episodes, pageLoading, page,
-        allPagesLoaded);
+    return loaded(selectedSeason, episodes, pageLoading, page, allPagesLoaded);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function(String searchString, int selectedSeason)? loading,
-    TResult? Function(
-            String searchString,
-            int selectedSeason,
-            List<Episode> episodes,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult? Function(int selectedSeason)? loading,
+    TResult? Function(int selectedSeason, List<Episode> episodes,
+            bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
   }) {
-    return loaded?.call(searchString, selectedSeason, episodes, pageLoading,
-        page, allPagesLoaded);
+    return loaded?.call(
+        selectedSeason, episodes, pageLoading, page, allPagesLoaded);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function(String searchString, int selectedSeason)? loading,
-    TResult Function(
-            String searchString,
-            int selectedSeason,
-            List<Episode> episodes,
-            bool pageLoading,
-            int page,
-            bool allPagesLoaded)?
+    TResult Function(int selectedSeason)? loading,
+    TResult Function(int selectedSeason, List<Episode> episodes,
+            bool pageLoading, int page, bool allPagesLoaded)?
         loaded,
     required TResult orElse(),
   }) {
     if (loaded != null) {
-      return loaded(searchString, selectedSeason, episodes, pageLoading, page,
-          allPagesLoaded);
+      return loaded(
+          selectedSeason, episodes, pageLoading, page, allPagesLoaded);
     }
     return orElse();
   }
@@ -1265,14 +1000,12 @@ class _$LoadedImpl implements _Loaded {
 
 abstract class _Loaded implements EpisodesState {
   const factory _Loaded(
-      {required final String searchString,
-      required final int selectedSeason,
+      {required final int selectedSeason,
       required final List<Episode> episodes,
       required final bool pageLoading,
       required final int page,
       required final bool allPagesLoaded}) = _$LoadedImpl;
 
-  String get searchString;
   int get selectedSeason;
   List<Episode> get episodes;
   bool get pageLoading;
