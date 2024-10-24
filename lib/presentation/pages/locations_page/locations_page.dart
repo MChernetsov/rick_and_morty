@@ -24,7 +24,12 @@ class LocationsPage extends StatelessWidget {
       child: BlocBuilder<LocationsBloc, LocationsState>(
         builder: (context, state) {
           return Scaffold(
-            appBar: LocationsAppBar(),
+            appBar: LocationsAppBar(
+              hasFilter: state.maybeMap(
+                orElse: () => false,
+                loaded: (state) => state.filterInfo.filterNotEmpty,
+              ),
+            ),
             body: SafeArea(
               child: state.map(
                 initial: (_) => SizedBox(),
@@ -36,9 +41,11 @@ class LocationsPage extends StatelessWidget {
                 loaded: (state) {
                   if (state.locations.isEmpty &&
                       state.filterInfo.filterNotEmpty) {
-                    return EmptyState(
-                      text: localizations.emptyFilter,
-                      url: 'assets/images/empty_filter.png',
+                    return Center(
+                      child: EmptyState(
+                        text: localizations.emptyFilter,
+                        url: 'assets/images/empty_filter.png',
+                      ),
                     );
                   }
                   return LocationList(

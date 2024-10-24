@@ -18,6 +18,7 @@ import 'package:rick_and_morty/application/characters/detail_character/detail_ch
 import 'package:rick_and_morty/application/episodes/detail_episode/detail_episode_bloc.dart'
     as _i517;
 import 'package:rick_and_morty/application/episodes/episodes_bloc.dart' as _i13;
+import 'package:rick_and_morty/application/filter/filter_bloc.dart' as _i949;
 import 'package:rick_and_morty/application/locations/detail_location/detail_location_bloc.dart'
     as _i316;
 import 'package:rick_and_morty/application/locations/locations_bloc.dart'
@@ -58,6 +59,7 @@ extension GetItInjectableX on _i174.GetIt {
       () => injectionModule.sharedPreferences,
       preResolve: true,
     );
+    gh.factory<_i949.FilterBloc>(() => _i949.FilterBloc());
     gh.lazySingleton<_i361.Dio>(() => injectionModule.dio);
     gh.factory<_i649.CharactersApi>(() => _i649.CharactersApi(gh<_i361.Dio>()));
     gh.factory<_i832.LocationApi>(() => _i832.LocationApi(gh<_i361.Dio>()));

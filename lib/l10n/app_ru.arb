@@ -30,5 +30,17 @@
   "searchLocation": "Найти локацию",
   "totalLocations": "Всего локаций: ",
   "foundLocations": "Найдено локаций: ",
-  "searchResults": "РЕЗУЛЬТАТЫ ПОИСКА"
+  "searchResults": "РЕЗУЛЬТАТЫ ПОИСКА",
+  "filters": "Фильтры",
+  "status": "СТАТУС",
+  "genderCapital": "ПОЛ",
+  "unselected": "Не выбран",
+  "unselectedLocation": "Не выбрано",
+  "filterBy": "ФИЛЬТРОВАТЬ ПО:",
+  "locationType": "Тип",
+  "locationTypeSelect": "Выберите тип локации",
+  "locationDimension": "Измерение",
+  "locationDimensionSelect": "Выберите измерение локации",
+  "typeSelect": "Выберите тип",
+  "dimensionSelect": "Выберите измерение"
 }

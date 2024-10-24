@@ -6,11 +6,13 @@ class DisabledSearchTextField extends StatelessWidget {
     required this.hint,
     required this.onSearchTapped,
     required this.onFilterTapped,
+    required this.hasFilter,
   });
 
   final String hint;
   final VoidCallback onSearchTapped;
   final VoidCallback? onFilterTapped;
+  final bool hasFilter;
 
   @override
   Widget build(BuildContext context) {
@@ -62,8 +64,12 @@ class DisabledSearchTextField extends StatelessWidget {
                     right: 16,
                   ),
                   child: Icon(
-                    Icons.filter_alt_outlined,
-                    color: theme.colorScheme.onTertiaryContainer,
+                    hasFilter
+                        ? Icons.filter_alt_outlined
+                        : Icons.filter_alt_off_outlined,
+                    color: hasFilter
+                        ? theme.colorScheme.error
+                        : theme.colorScheme.onTertiaryContainer,
                   ),
                 ),
               ),

@@ -101,4 +101,40 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get searchResults => 'РЕЗУЛЬТАТЫ ПОИСКА';
+
+  @override
+  String get filters => 'Фильтры';
+
+  @override
+  String get status => 'СТАТУС';
+
+  @override
+  String get genderCapital => 'ПОЛ';
+
+  @override
+  String get unselected => 'Не выбран';
+
+  @override
+  String get unselectedLocation => 'Не выбрано';
+
+  @override
+  String get filterBy => 'ФИЛЬТРОВАТЬ ПО:';
+
+  @override
+  String get locationType => 'Тип';
+
+  @override
+  String get locationTypeSelect => 'Выберите тип локации';
+
+  @override
+  String get locationDimension => 'Измерение';
+
+  @override
+  String get locationDimensionSelect => 'Выберите измерение локации';
+
+  @override
+  String get typeSelect => 'Выберите тип';
+
+  @override
+  String get dimensionSelect => 'Выберите измерение';
 }
