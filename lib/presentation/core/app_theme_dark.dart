@@ -5,10 +5,12 @@ final appThemeDark = ThemeData(
   unselectedWidgetColor: Color(0xFF5B6975),
   scaffoldBackgroundColor: Color(0xFF0B1E2D),
   dividerColor: Color(0xFF152A3A),
+  bottomNavigationBarTheme: BottomNavigationBarThemeData(
+    backgroundColor: Color(0xFF152A3A),
+  ),
   colorScheme: ColorScheme.dark(
     onSurface: Color(0xFFFFFFFF),
     error: Color(0xFFEB5757),
-    // undefined in color pallete
     secondaryContainer: Colors.amber,
     onSecondaryContainer: Color(0xFF6E798C),
     onTertiaryContainer: Color(0xFF5B6975),

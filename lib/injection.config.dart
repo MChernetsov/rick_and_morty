@@ -11,6 +11,8 @@
 import 'package:dio/dio.dart' as _i361;
 import 'package:get_it/get_it.dart' as _i174;
 import 'package:injectable/injectable.dart' as _i526;
+import 'package:rick_and_morty/application/app_theme/app_theme_bloc.dart'
+    as _i992;
 import 'package:rick_and_morty/application/characters/characters_bloc.dart'
     as _i520;
 import 'package:rick_and_morty/application/characters/detail_character/detail_character_bloc.dart'
@@ -30,6 +32,8 @@ import 'package:rick_and_morty/domain/episode/i_episode_repository.dart'
     as _i756;
 import 'package:rick_and_morty/domain/locations/i_location_repository.dart'
     as _i547;
+import 'package:rick_and_morty/domain/settings/i_settings_repository.dart'
+    as _i899;
 import 'package:rick_and_morty/infrastructure/api/characters_api.dart' as _i649;
 import 'package:rick_and_morty/infrastructure/api/episode_api.dart' as _i348;
 import 'package:rick_and_morty/infrastructure/api/location_api.dart' as _i832;
@@ -41,6 +45,8 @@ import 'package:rick_and_morty/infrastructure/features/episode/episode_repositor
     as _i606;
 import 'package:rick_and_morty/infrastructure/features/location/location_repository.dart'
     as _i977;
+import 'package:rick_and_morty/infrastructure/features/settings/settings_repository.dart'
+    as _i50;
 import 'package:shared_preferences/shared_preferences.dart' as _i460;
 
 extension GetItInjectableX on _i174.GetIt {
@@ -61,6 +67,8 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i949.FilterBloc>(() => _i949.FilterBloc());
     gh.lazySingleton<_i361.Dio>(() => injectionModule.dio);
+    gh.lazySingleton<_i899.ISettingsRepository>(
+        () => _i50.SettingsRepository(gh<_i460.SharedPreferences>()));
     gh.factory<_i649.CharactersApi>(() => _i649.CharactersApi(gh<_i361.Dio>()));
     gh.factory<_i832.LocationApi>(() => _i832.LocationApi(gh<_i361.Dio>()));
     gh.factory<_i348.EpisodeApi>(() => _i348.EpisodeApi(gh<_i361.Dio>()));
@@ -74,6 +82,8 @@ extension GetItInjectableX on _i174.GetIt {
           gh<_i756.IEpisodeRepository>(),
           gh<_i547.ILocationRepository>(),
         ));
+    gh.factory<_i992.AppThemeBloc>(
+        () => _i992.AppThemeBloc(gh<_i899.ISettingsRepository>()));
     gh.factory<_i13.EpisodesBloc>(
         () => _i13.EpisodesBloc(gh<_i756.IEpisodeRepository>()));
     gh.lazySingleton<_i556.ICharacterRepository>(

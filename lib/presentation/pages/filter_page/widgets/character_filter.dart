@@ -4,7 +4,7 @@ import 'package:rick_and_morty/application/filter/filter_bloc.dart';
 import 'package:rick_and_morty/domain/characters/models/character.dart';
 import 'package:rick_and_morty/domain/characters/models/filter_info.dart';
 import 'package:rick_and_morty/l10n/app_localizations.dart';
-import 'package:rick_and_morty/presentation/pages/filter_page/widgets/radio_tile.dart';
+import 'package:rick_and_morty/presentation/core/widgets/radio_tile.dart';
 
 class CharacterFilter extends StatelessWidget {
   const CharacterFilter({

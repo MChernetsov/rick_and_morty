@@ -137,4 +137,37 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get dimensionSelect => 'Выберите измерение';
+
+  @override
+  String get appearance => 'Внешний вид';
+
+  @override
+  String get darkTheme => 'Темная тема';
+
+  @override
+  String get enabled => 'Включена';
+
+  @override
+  String get disabled => 'Выключена';
+
+  @override
+  String get platformBrightness => 'Следовать настройкам системы';
+
+  @override
+  String get onlyOnBatterySave => 'В режиме энергосберения';
+
+  @override
+  String get cancel => 'Отмена';
+
+  @override
+  String get aboutApp => 'О приложении';
+
+  @override
+  String get aboutAppDescription => 'Зигерионцы помещают Джерри и Рика в симуляцию, чтобы узнать секрет изготовления концен-трирован- ной темной материи.';
+
+  @override
+  String get appVersion => 'Версия приложения';
+
+  @override
+  String get appVersionName => 'Rick & Morty v1.0.0';
 }

@@ -356,6 +356,72 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Выберите измерение'**
   String get dimensionSelect;
+
+  /// No description provided for @appearance.
+  ///
+  /// In ru, this message translates to:
+  /// **'Внешний вид'**
+  String get appearance;
+
+  /// No description provided for @darkTheme.
+  ///
+  /// In ru, this message translates to:
+  /// **'Темная тема'**
+  String get darkTheme;
+
+  /// No description provided for @enabled.
+  ///
+  /// In ru, this message translates to:
+  /// **'Включена'**
+  String get enabled;
+
+  /// No description provided for @disabled.
+  ///
+  /// In ru, this message translates to:
+  /// **'Выключена'**
+  String get disabled;
+
+  /// No description provided for @platformBrightness.
+  ///
+  /// In ru, this message translates to:
+  /// **'Следовать настройкам системы'**
+  String get platformBrightness;
+
+  /// No description provided for @onlyOnBatterySave.
+  ///
+  /// In ru, this message translates to:
+  /// **'В режиме энергосберения'**
+  String get onlyOnBatterySave;
+
+  /// No description provided for @cancel.
+  ///
+  /// In ru, this message translates to:
+  /// **'Отмена'**
+  String get cancel;
+
+  /// No description provided for @aboutApp.
+  ///
+  /// In ru, this message translates to:
+  /// **'О приложении'**
+  String get aboutApp;
+
+  /// No description provided for @aboutAppDescription.
+  ///
+  /// In ru, this message translates to:
+  /// **'Зигерионцы помещают Джерри и Рика в симуляцию, чтобы узнать секрет изготовления концен-трирован- ной темной материи.'**
+  String get aboutAppDescription;
+
+  /// No description provided for @appVersion.
+  ///
+  /// In ru, this message translates to:
+  /// **'Версия приложения'**
+  String get appVersion;
+
+  /// No description provided for @appVersionName.
+  ///
+  /// In ru, this message translates to:
+  /// **'Rick & Morty v1.0.0'**
+  String get appVersionName;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

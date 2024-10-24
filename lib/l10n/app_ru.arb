@@ -42,5 +42,17 @@
   "locationDimension": "Измерение",
   "locationDimensionSelect": "Выберите измерение локации",
   "typeSelect": "Выберите тип",
-  "dimensionSelect": "Выберите измерение"
+  "dimensionSelect": "Выберите измерение",
+  "appearance": "Внешний вид",
+  "darkTheme": "Темная тема",
+  "enabled": "Включена",
+  "disabled": "Выключена",
+  "platformBrightness": "Следовать настройкам системы",
+  "onlyOnBatterySave": "В режиме энергосберения",
+  "cancel": "Отмена",
+  "aboutApp": "О приложении",
+  "aboutAppDescription": "Зигерионцы помещают Джерри и Рика в симуляцию, чтобы узнать секрет изготовления концен-трирован- ной темной материи.",
+  "appVersion": "Версия приложения",
+  "appVersionName": "Rick & Morty v1.0.0"
+
 }
