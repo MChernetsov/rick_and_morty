@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rick_and_morty/domain/locations/models/location.dart';
-import 'package:rick_and_morty/presentation/pages/locations_page/widgets/location_list_item.dart';
+import 'package:rick_and_morty/presentation/core/widgets/location_list_item.dart';
 
 class LocationList extends StatefulWidget {
   const LocationList({
@@ -54,5 +54,11 @@ class _LocationListState extends State<LocationList> {
         height: 24,
       ),
     );
+  }
+
+  @override
+  void dispose() {
+    super.dispose();
+    controller.dispose();
   }
 }

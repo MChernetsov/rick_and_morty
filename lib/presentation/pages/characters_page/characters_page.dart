@@ -7,7 +7,7 @@ import 'package:rick_and_morty/l10n/app_localizations.dart';
 import 'package:rick_and_morty/presentation/core/widgets/empty_state.dart';
 import 'package:rick_and_morty/presentation/pages/characters_page/widgets/character_grid.dart';
 import 'package:rick_and_morty/presentation/pages/characters_page/widgets/character_list.dart';
-import 'package:rick_and_morty/presentation/pages/characters_page/widgets/search_app_bar.dart';
+import 'package:rick_and_morty/presentation/pages/characters_page/widgets/character_app_bar.dart';
 
 @RoutePage()
 class CharactersPage extends StatelessWidget {
@@ -25,7 +25,7 @@ class CharactersPage extends StatelessWidget {
       child: BlocBuilder<CharactersBloc, CharactersState>(
         builder: (context, state) {
           return Scaffold(
-            appBar: SearchAppBar(),
+            appBar: CharacterAppbar(),
             body: SafeArea(
               child: state.map(
                 initial: (_) => SizedBox(),
@@ -35,13 +35,6 @@ class CharactersPage extends StatelessWidget {
                   ),
                 ),
                 loaded: (state) {
-                  if (state.characters.isEmpty &&
-                      state.searchString.isNotEmpty) {
-                    return EmptyState(
-                      text: localizations.emptyCharacter,
-                      url: 'assets/images/empty_character.png',
-                    );
-                  }
                   if (state.characters.isEmpty &&
                       state.filterInfo.filterNotEmpty) {
                     return EmptyState(

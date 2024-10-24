@@ -1,7 +1,12 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:rick_and_morty/application/episodes/episodes_bloc.dart';
+import 'package:rick_and_morty/domain/search/search_type.dart';
+import 'package:rick_and_morty/l10n/app_localizations.dart';
+import 'package:rick_and_morty/presentation/core/widgets/disabled_search_text_field.dart';
 import 'package:rick_and_morty/presentation/pages/episodes_page/widgets/episode_chip.dart';
+import 'package:rick_and_morty/presentation/routing/router.gr.dart';
 
 class EpisodesAppBar extends StatelessWidget implements PreferredSizeWidget {
   const EpisodesAppBar({
@@ -19,7 +24,22 @@ class EpisodesAppBar extends StatelessWidget implements PreferredSizeWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              if (selectedSeason != 0)
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 16,
+                ),
+                child: DisabledSearchTextField(
+                  hint: AppLocalizations.of(context).searchEpisode,
+                  onFilterTapped: null,
+                  onSearchTapped: () {
+                    context.router.push(SearchRoute(type: SearchType.episode));
+                  },
+                ),
+              ),
+              if (selectedSeason != 0) ...[
+                SizedBox(
+                  height: 24,
+                ),
                 Row(
                   children: List.generate(
                     4,
@@ -28,7 +48,8 @@ class EpisodesAppBar extends StatelessWidget implements PreferredSizeWidget {
                       selected: selectedSeason == index + 1,
                     ),
                   ),
-                )
+                ),
+              ]
             ],
           ),
         );
@@ -37,6 +58,5 @@ class EpisodesAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  // TODO: implement preferredSize
-  Size get preferredSize => Size.fromHeight(40);
+  Size get preferredSize => Size.fromHeight(106);
 }

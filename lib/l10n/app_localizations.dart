@@ -254,6 +254,36 @@ abstract class AppLocalizations {
   /// In ru, this message translates to:
   /// **'Премьера'**
   String get premier;
+
+  /// No description provided for @searchEpisode.
+  ///
+  /// In ru, this message translates to:
+  /// **'Найти эпизод'**
+  String get searchEpisode;
+
+  /// No description provided for @searchLocation.
+  ///
+  /// In ru, this message translates to:
+  /// **'Найти локацию'**
+  String get searchLocation;
+
+  /// No description provided for @totalLocations.
+  ///
+  /// In ru, this message translates to:
+  /// **'Всего локаций: '**
+  String get totalLocations;
+
+  /// No description provided for @foundLocations.
+  ///
+  /// In ru, this message translates to:
+  /// **'Найдено локаций: '**
+  String get foundLocations;
+
+  /// No description provided for @searchResults.
+  ///
+  /// In ru, this message translates to:
+  /// **'РЕЗУЛЬТАТЫ ПОИСКА'**
+  String get searchResults;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

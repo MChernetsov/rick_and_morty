@@ -86,4 +86,19 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get premier => 'Премьера';
+
+  @override
+  String get searchEpisode => 'Найти эпизод';
+
+  @override
+  String get searchLocation => 'Найти локацию';
+
+  @override
+  String get totalLocations => 'Всего локаций: ';
+
+  @override
+  String get foundLocations => 'Найдено локаций: ';
+
+  @override
+  String get searchResults => 'РЕЗУЛЬТАТЫ ПОИСКА';
 }

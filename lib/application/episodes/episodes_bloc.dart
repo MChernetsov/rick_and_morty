@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:bloc_concurrency/bloc_concurrency.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
 import 'package:rick_and_morty/domain/episode/i_episode_repository.dart';
@@ -17,17 +16,12 @@ class EpisodesBloc extends Bloc<EpisodesEvent, EpisodesState> {
   EpisodesBloc(this._repository) : super(const EpisodesState.initial()) {
     on<EpisodesEvent>(
       (event, emit) async {
-        await event.maybeMap(
-          orElse: () {},
+        await event.map(
           started: (_) => _started(emit),
           nextPageLoaded: (_) => _nextPageLoaded(emit),
           seasonChanged: (e) => _seasonChanged(e, emit),
         );
       },
-    );
-    on<_SearchStringChanged>(
-      (event, emit) async => _searchStringChanged(event, emit),
-      transformer: restartable(),
     );
   }
 
@@ -43,7 +37,6 @@ class EpisodesBloc extends Bloc<EpisodesEvent, EpisodesState> {
         page: 1,
         allPagesLoaded: !result.hasNext,
         selectedSeason: 1,
-        searchString: '',
       ),
     );
   }
@@ -58,7 +51,6 @@ class EpisodesBloc extends Bloc<EpisodesEvent, EpisodesState> {
         final result = await _repository.getEpisodes(
           season: state.selectedSeason,
           page: state.page + 1,
-          search: state.searchString,
         );
         emit(state.copyWith(
           episodes: [...state.episodes, ...result.episodes],
@@ -77,13 +69,11 @@ class EpisodesBloc extends Bloc<EpisodesEvent, EpisodesState> {
       loaded: (state) async {
         emit(
           EpisodesState.loading(
-            searchString: state.searchString,
             selectedSeason: e.selectedSeason,
           ),
         );
         final result = await _repository.getEpisodes(
           season: e.selectedSeason,
-          search: state.searchString,
         );
 
         emit(
@@ -93,38 +83,6 @@ class EpisodesBloc extends Bloc<EpisodesEvent, EpisodesState> {
             page: 1,
             allPagesLoaded: !result.hasNext,
             selectedSeason: e.selectedSeason,
-          ),
-        );
-      },
-    );
-  }
-
-  FutureOr<void> _searchStringChanged(
-      _SearchStringChanged event, Emitter<EpisodesState> emit) async {
-    await state.maybeMap(
-      orElse: () {},
-      loaded: (state) async {
-        await Future.delayed(
-          Duration(milliseconds: 500),
-        );
-        emit(
-          EpisodesState.loading(
-            searchString: event.searchString,
-            selectedSeason: state.selectedSeason,
-          ),
-        );
-        final result = await _repository.getEpisodes(
-          season: state.selectedSeason,
-          search: event.searchString,
-        );
-
-        emit(
-          state.copyWith(
-            episodes: result.episodes,
-            pageLoading: false,
-            page: 1,
-            allPagesLoaded: !result.hasNext,
-            searchString: event.searchString,
           ),
         );
       },
